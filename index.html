@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Unmaiyana Vetti People</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HOME ─────────────────────────────────────────────────────────── -->
+<div class="home-view">
+  <div class="container">
+
+    <header class="masthead">
+      <div class="masthead-eyebrow">A weekly periodical on sport</div>
+      <div class="masthead-title-row">
+        <img class="masthead-logo" src="logo.svg" alt="UVP logo">
+        <h1 class="masthead-title">
+          <span class="the">The</span>
+          <em>Unmaiyana Vetti People</em>
+        </h1>
+      </div>
+      <p class="masthead-sub">Deeply, unnecessarily, passionately invested.</p>
+    </header>
+
+    <div class="issue-bar" id="issue-bar"><span></span></div>
+
+    <main class="feed" id="feed">
+      <p class="loading-text">Fetching this week's stories…</p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="ornament">&#x273B; &nbsp; &#x273B; &nbsp; &#x273B;</div>
+      <p class="site-footer-text">
+        Printed weekly, read slowly. &nbsp;&nbsp;&middot;&nbsp;&nbsp; &copy; MMXXVI<br>
+        A periodical for the genuinely idle.
+      </p>
+    </footer>
+
+  </div>
+</div>
+
+<!-- ARTICLE ──────────────────────────────────────────────────────── -->
+<div class="article-view">
+  <div class="container">
+
+    <nav class="article-nav">
+      <button class="back-link" id="back-link">Back to all stories</button>
+      <div class="mini-masthead"><em>The Unmaiyana Vetti People</em></div>
+    </nav>
+
+    <div id="article-content"></div>
+
+    <footer class="article-footer">
+      <p class="article-footer-text">Filed from north London. &nbsp;&middot;&nbsp; The Unmaiyana Vetti People, Issue No. XLII.</p>
+    </footer>
+
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════
+   STATIC SITE LOGIC
+   - One dummy article in the ARTICLES array below. Swap freely.
+   - Hash routing:  /            → home feed
+                    /#/article/x → single article view
+═══════════════════════════════════════════════════════════════════ */
+
+/* ── 1. Article data ─────────────────────────────────────────────
+   Add more articles by appending objects with the same shape.
+   `body_html` accepts <p>, <blockquote class="pullquote">, etc.
+   For a custom cover image, set `image_url` to a path/URL and drop
+   `image_svg`. Leaving image_url null falls back to the SVG glyph. */
+const ARTICLES = [
+  {
+    id:          "the-mid-season-pause",
+    tag:         "Football",
+    title:       "The Mid-Season Pause",
+    subtitle:    "What three teams need to fix before play resumes — and the one nobody is talking about.",
+    author:      "A. N. Writer",
+    date:        "2 June 2026",
+    read_time:   "Four minute read",
+    image_label: "Football",
+    image_url:   null,
+    image_svg:   `
+      <g fill="none" stroke="#F2E8CF" stroke-width="0.7" opacity="0.30">
+        <circle cx="50" cy="50" r="22"/>
+        <path d="M50 28 L58 36 L55 46 L45 46 L42 36 Z"/>
+        <path d="M50 72 L58 64 L55 54 L45 54 L42 64 Z"/>
+        <path d="M28 50 L36 42 L46 45 L46 55 L36 58 Z"/>
+        <path d="M72 50 L64 42 L54 45 L54 55 L64 58 Z"/>
+      </g>`,
+    body_html: `
+      <p>It is the part of the season nobody quite knows what to do with. The international break in May, that small administrative inconvenience masquerading as a pause for breath, is here again, and three teams in particular have decisions to make before the league starts again on the second weekend of June.</p>
+      <p>The first is the obvious one. The team at the top of the table has spent four months winning matches it ought not to have won — drawing wide-eyed praise from pundits who, only a year ago, were busy writing the same coach's obituary. The numbers, if you ignore the league position, are slightly less generous. Expected goals against has crept up. The high press is half a metre slower than it was in February. None of these are catastrophes by themselves. All of them, at once, are the shape of a regression that hasn't yet shown up in the points column.</p>
+      <blockquote class="pullquote">The high press is half a metre slower than it was in February. That isn't a catastrophe. It is the shape of a regression that hasn't yet shown up.</blockquote>
+      <p>The second team is the one nobody worries about because they're sixth, and sixth is fine. Sixth is, in fact, almost their ceiling on paper. But the manner of those points — late goals, scruffy clean sheets, a striker who has been quietly brilliant for the first time in his career — is the kind of thing that does not always continue. There is a version of June in which sixth becomes ninth quite quickly, and the conversation around the manager turns from "low-key season of the year" to "perhaps we got the timing wrong."</p>
+      <p>The third team is the one the bookmakers have, against all common sense, decided is now a relegation candidate. They have one win in eight. The body language at training, by all accounts, is fine. The coach is still convinced he can fix this without changing very much. He may be right. He may also be the last person in the building who still believes that.</p>
+      <p>And the team nobody is talking about? The one currently in fourth, with the second-best defensive record in the league, and a manager three months from the end of his contract. The transfer window has not yet opened. By the time it does, three of his back four will have agents on the phone, and the club's chief executive will be in a meeting he has, characteristically, refused to schedule. Everyone, of course, says these things sort themselves out. Sometimes they do. June will tell us which is which.</p>
+    `,
+  },
+];
+
+/* ── 2. Helpers ─────────────────────────────────────────────────── */
+const $ = id => document.getElementById(id);
+const esc = s => (s ?? "").toString()
+  .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+  .replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const DAYS   = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+function todayLine(){
+  const d = new Date();
+  return `${DAYS[d.getDay()]} · ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+/* ── 3. Render: home feed ───────────────────────────────────────── */
+function renderIssueBar(){ $("issue-bar").innerHTML = `<span>${esc(todayLine())}</span>`; }
+
+function renderFeed(){
+  if (!ARTICLES.length){
+    $("feed").innerHTML = `<p class="loading-text">No stories yet.</p>`;
+    return;
+  }
+  $("feed").innerHTML = ARTICLES.map(a => `
+    <article class="article-card" data-id="${esc(a.id)}">
+      <div class="article-img ${a.image_url ? "has-img" : ""}">
+        ${a.image_url
+          ? `<img src="${esc(a.image_url)}" alt="">`
+          : `<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">${a.image_svg || ""}</svg>`}
+        <span class="article-img-label">${esc(a.image_label || "")}</span>
+      </div>
+      <div class="article-content">
+        <span class="article-tag">${esc(a.tag)}</span>
+        <h2 class="article-title">${esc(a.title)}</h2>
+        <p class="article-sub">${esc(a.subtitle)}</p>
+        <p class="article-byline">By <strong>${esc(a.author)}</strong> &nbsp;&middot;&nbsp; ${esc(a.read_time)}</p>
+      </div>
+    </article>
+  `).join("");
+  document.querySelectorAll(".article-card").forEach(card => {
+    card.onclick = () => location.hash = `#/article/${card.dataset.id}`;
+  });
+}
+
+/* ── 4. Render: single article ──────────────────────────────────── */
+function renderArticle(a){
+  const heroImg = a.image_url
+    ? `<img src="${esc(a.image_url)}" alt="">`
+    : `<svg viewBox="0 0 100 56" preserveAspectRatio="xMidYMid meet">${a.image_svg || ""}</svg>`;
+
+  $("article-content").innerHTML = `
+    <div class="article-hero">
+      <span class="article-tag">${esc(a.tag)}</span>
+      <h1 class="article-hero-title">${esc(a.title)}</h1>
+      <p class="article-hero-sub">${esc(a.subtitle)}</p>
+      <div class="article-meta">
+        By <strong>${esc(a.author)}</strong>
+        <span class="dot">&middot;</span>
+        ${esc(a.date)}
+        <span class="dot">&middot;</span>
+        ${esc(a.read_time)}
+      </div>
+    </div>
+
+    <div class="article-hero-img ${a.image_url ? "has-img" : ""}">${heroImg}</div>
+
+    <article class="article-body">
+      ${a.body_html}
+      <div class="article-end">&#x273B; &#x273B; &#x273B;</div>
+    </article>`;
+}
+
+/* ── 5. Router ──────────────────────────────────────────────────── */
+function render(){
+  const hash = location.hash || "#/";
+  document.body.classList.remove("article-active");
+
+  const m = hash.match(/^#\/article\/(.+)$/);
+  if (m){
+    const id = decodeURIComponent(m[1]);
+    const a = ARTICLES.find(x => x.id === id);
+    if (a){
+      document.body.classList.add("article-active");
+      renderArticle(a);
+      window.scrollTo({ top: 0, behavior: "instant" });
+      return;
+    }
+  }
+  // Default: home view
+  window.scrollTo({ top: 0, behavior: "instant" });
+}
+
+$("back-link").onclick = () => location.hash = "#/";
+window.addEventListener("hashchange", render);
+
+renderIssueBar();
+renderFeed();
+render();
+</script>
+
+</body>
+</html>
