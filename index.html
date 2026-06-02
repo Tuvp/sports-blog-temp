@@ -18,9 +18,8 @@
   <div class="container">
 
     <header class="masthead">
-      <div class="masthead-eyebrow">A weekly periodical on sport</div>
       <div class="masthead-title-row">
-        <img class="masthead-logo" src="logo.svg" alt="UVP logo">
+        <img class="masthead-logo" src="uvp_logo.png" alt="UVP logo">
         <h1 class="masthead-title">
           <span class="the">The</span>
           <em>Unmaiyana Vetti People</em>
@@ -38,8 +37,7 @@
     <footer class="site-footer">
       <div class="ornament">&#x273B; &nbsp; &#x273B; &nbsp; &#x273B;</div>
       <p class="site-footer-text">
-        Printed weekly, read slowly. &nbsp;&nbsp;&middot;&nbsp;&nbsp; &copy; MMXXVI<br>
-        A periodical for the genuinely idle.
+        Instagram: @tuvp_in &nbsp;&middot;&nbsp; X: @tuvp_in
       </p>
     </footer>
 
@@ -53,12 +51,13 @@
     <nav class="article-nav">
       <button class="back-link" id="back-link">Back to all stories</button>
       <div class="mini-masthead"><em>The Unmaiyana Vetti People</em></div>
+      <button class="share-link" id="share-link" type="button">Share</button>
     </nav>
 
     <div id="article-content"></div>
 
     <footer class="article-footer">
-      <p class="article-footer-text">Filed from north London. &nbsp;&middot;&nbsp; The Unmaiyana Vetti People, Issue No. XLII.</p>
+      <p class="article-footer-text">Instagram: @tuvp_in &nbsp;&middot;&nbsp; X: @tuvp_in</p>
     </footer>
 
   </div>
@@ -77,32 +76,291 @@
    `body_html` accepts <p>, <blockquote class="pullquote">, etc.
    For a custom cover image, set `image_url` to a path/URL and drop
    `image_svg`. Leaving image_url null falls back to the SVG glyph. */
+const FOOTBALL_SVG = `
+  <g fill="none" stroke="#F2E8CF" stroke-width="0.7" opacity="0.30">
+    <circle cx="50" cy="50" r="22"/>
+    <path d="M50 28 L58 36 L55 46 L45 46 L42 36 Z"/>
+    <path d="M50 72 L58 64 L55 54 L45 54 L42 64 Z"/>
+    <path d="M28 50 L36 42 L46 45 L46 55 L36 58 Z"/>
+    <path d="M72 50 L64 42 L54 45 L54 55 L64 58 Z"/>
+  </g>`;
+
 const ARTICLES = [
+
   {
-    id:          "the-mid-season-pause",
+    id:          "group-c-2026-fifa-wc",
     tag:         "Football",
-    title:       "The Mid-Season Pause",
-    subtitle:    "What three teams need to fix before play resumes — and the one nobody is talking about.",
-    author:      "A. N. Writer",
+    title:       "12 Groups, 12 Previews, 12 Questions: Group C - 2026 FIFA WC",
+    subtitle:    "Ancelotti's Brazil, last edition's semi-finalists Morocco, gritty Scotland and minnows Haiti.",
+    author:      "Vishal",
     date:        "2 June 2026",
-    read_time:   "Four minute read",
-    image_label: "Football",
-    image_url:   null,
-    image_svg:   `
-      <g fill="none" stroke="#F2E8CF" stroke-width="0.7" opacity="0.30">
-        <circle cx="50" cy="50" r="22"/>
-        <path d="M50 28 L58 36 L55 46 L45 46 L42 36 Z"/>
-        <path d="M50 72 L58 64 L55 54 L45 54 L42 64 Z"/>
-        <path d="M28 50 L36 42 L46 45 L46 55 L36 58 Z"/>
-        <path d="M72 50 L64 42 L54 45 L54 55 L64 58 Z"/>
-      </g>`,
+    read_time:   "Seven minute read",
+    image_label: "Group C",
+    image_url:   "group-c-cover.webp",
+    image_svg:   FOOTBALL_SVG,
+    image_credit:`Image generated using ChatGPT (OpenAI) from the prompt: "Collage of 4 teams in Group C of the FIFA WC, with the flag maps of the 4 countries occupying the corners and the words Group C in the middle in a minimalist and toned down setting"`,
     body_html: `
-      <p>It is the part of the season nobody quite knows what to do with. The international break in May, that small administrative inconvenience masquerading as a pause for breath, is here again, and three teams in particular have decisions to make before the league starts again on the second weekend of June.</p>
-      <p>The first is the obvious one. The team at the top of the table has spent four months winning matches it ought not to have won — drawing wide-eyed praise from pundits who, only a year ago, were busy writing the same coach's obituary. The numbers, if you ignore the league position, are slightly less generous. Expected goals against has crept up. The high press is half a metre slower than it was in February. None of these are catastrophes by themselves. All of them, at once, are the shape of a regression that hasn't yet shown up in the points column.</p>
-      <blockquote class="pullquote">The high press is half a metre slower than it was in February. That isn't a catastrophe. It is the shape of a regression that hasn't yet shown up.</blockquote>
-      <p>The second team is the one nobody worries about because they're sixth, and sixth is fine. Sixth is, in fact, almost their ceiling on paper. But the manner of those points — late goals, scruffy clean sheets, a striker who has been quietly brilliant for the first time in his career — is the kind of thing that does not always continue. There is a version of June in which sixth becomes ninth quite quickly, and the conversation around the manager turns from "low-key season of the year" to "perhaps we got the timing wrong."</p>
-      <p>The third team is the one the bookmakers have, against all common sense, decided is now a relegation candidate. They have one win in eight. The body language at training, by all accounts, is fine. The coach is still convinced he can fix this without changing very much. He may be right. He may also be the last person in the building who still believes that.</p>
-      <p>And the team nobody is talking about? The one currently in fourth, with the second-best defensive record in the league, and a manager three months from the end of his contract. The transfer window has not yet opened. By the time it does, three of his back four will have agents on the phone, and the club's chief executive will be in a meeting he has, characteristically, refused to schedule. Everyone, of course, says these things sort themselves out. Sometimes they do. June will tell us which is which.</p>
+      <p>Group C could be one of the more exciting groups in this tournament. Brazil under Carlo Ancelotti will be raring to set things right while last edition's semi-finalists Morocco will look to put the controversy at AFCON behind them. Gritty Scotland and minnows Haiti will also look to make a statement here.</p>
+
+      <br>
+      <h2>1. How have they fared?</h2>
+      <p><strong>Brazil:</strong> They have done okay in this tournament, I guess? The Selecao are the only team to have featured in every single edition of the tournament and are the most successful as well, with five triumphs. However, it has been 24 years since their last win, a period that has seen the team fail to reach their lofty standards. Barring 2014 (we know what happened there, no need to get into it), they've strung a run of QF exits since 2002.</p>
+      <p><strong>Morocco:</strong> Over the past decade, Morocco have established themselves as an African powerhouse, thanks to an explosion of talent who are now starring across Europe. Their Cinderella run saw them reach the semis last time, their best performance ever. Prior to this, they had a few sporadic appearances in the tournament in the 20th century.</p>
+      <p><strong>Scotland:</strong> Scotland have made a huge return to the competition, ending a 28-year hiatus. The Scots were regulars in the tournament during the days of Kenny Dalglish and Archie Gemmill but are yet to feature in a knockout stage.</p>
+      <p><strong>Haiti:</strong> They made history with their qualification to the 2026 World Cup, becoming the first ever Caribbean nation to qualify twice. Their first appearance was back in 1974, where they failed to notch a single point but they will be keen on taking something home this time around.</p>
+
+      <br>
+      <h2>2. How did they get here?</h2>
+      <p><strong>BRA:</strong> Brazil earned direct qualification from the CONMEBOL World Cup qualifiers (a simple double round-robin tournament, please learn something AFC) but could only manage a fifth-place finish, with Argentina, Ecuador, Colombia and Uruguay all above them. They bagged 8 wins in 18 games, finishing on 28 points.</p>
+      <p><strong>MAR:</strong> Morocco were simply brilliant in their qualification campaign, just walking through the competition in CAF's Group E. They won all eight of their games, scoring 22 and conceding just 2 to secure direct qualification.</p>
+      <p><strong>SCO:</strong> Scotland had an excellent qualification campaign as well. Drawn alongside Denmark, Greece and Belarus in UEFA's Group C, Steve Clarke's men entered the last gameweek needing a win against the Danes who led by a point. Two goals in injury time carried them to a 4-2 win as they pipped their opponents to win the group.</p>
+      <p><strong>HAI:</strong> Haiti's journey here was a little more nail-biting. The Caribbean nation entered the last week needing a win and a result elsewhere. They beat Nicaragua 2-0 and their closest competitors Honduras were held to a goalless draw by Costa Rica, sending them through.</p>
+
+      <br>
+      <h2>3. What could go their way…</h2>
+      <p><strong>BRA:</strong> There is a bit of a callback to the Brazil teams of old with the sheer talent in attack Ancelotti has at his disposal. The Italian has resorted to using four attackers to get the most talent on the field and even with injuries to Rodrygo and Estevao, the likes of Vinicius Jr, Raphinha, Matheus Cunha, Neymar (!?) and Richarlison all possess the knack of scoring goals.</p>
+      <p><strong>MAR:</strong> Morocco boast arguably the most talented squad in their history. European stars line every portion of the field, headed by two-time UCL winner and star right-back Achraf Hakimi. The 2022 WC and the recent AFCON (despite what happened) show that this team knows how to win games when the pressure is raised.</p>
+      <p><strong>SCO:</strong> The resilient Tartan Army will show teams that they will be hard to beat. Led by the inspirational Andy Robertson, they are a hardworking, disciplined side that can shut out high-quality attacking teams while also causing a lot of trouble on the counter.</p>
+      <p><strong>HAI:</strong> Even getting to this stage has made Haiti a remarkable story, despite political issues in the country. While they may be outmatched at this level, the players will have a sense of motivation and determination few others may be able to match.</p>
+
+      <br>
+      <h2>4. … and what may not?</h2>
+      <p><strong>BRA:</strong> A free-flowing attacking Brazilian side will excite fans and neutral watchers but it may not be sustainable. Ancelotti's formation places huge weight on the shoulders of the midfield two and the defence and it may eventually crack, preventing a deep run in the tournament.</p>
+      <p><strong>MAR:</strong> There is not a single large hole that can be pinpointed in Morocco's squad. However, current manager Mohamed Ouahbi took the seat just three months ago. One can question if this team has had enough time to inculcate his ideas. Further, the weight of expectations to match their recent performances could also pose a problem.</p>
+      <p><strong>SCO:</strong> The lack of a true threatening striker could be what causes issues for Scotland in 2026. Che Adams is likely to start up top, but he managed just six goals in Serie A this season for Torino. Further contributions will need to come from midfield, something that could put too much on their plates.</p>
+      <p><strong>HAI:</strong> The fairy tale looks all set to end here. Haiti have been dealt a very difficult hand with three really good teams in Group C. The squad just doesn't possess the talent required to cause any issues but it is certain that the Grenadiers will put their best foot forward.</p>
+
+      <br>
+      <h2>5. How will they lineup?</h2>
+      <p><strong>BRA:</strong> As mentioned before, Brazil have mostly used the 4-2-4 under Ancelotti. Raphinha, Vini and Cunha will certainly start, with Richarlison, Martinelli and others competing for the last attacker spot. Casemiro and Bruno Guimaraes write themselves onto the team sheet, while Gabriel Magalhaes and Marquinhos form a strong partnership in central defence.</p>
+      <p><strong>MAR:</strong> Any formation that Ouahbi takes up will look to get Hakimi in positions high up the pitch, similar to what the defender does at PSG. Pairing him with Brahim Diaz on the right looks like a possible move, while the midfield has a variety of options that provide both stability and creativity.</p>
+      <p><strong>SCO:</strong> Steve Clarke will look to keep things simple and has largely used a 4-4-2 (on paper at least) in qualifying and recent friendlies. Scott McTominay will be everywhere on the field and John McGinn and Ryan Christie will play key midfield roles.</p>
+      <p><strong>HAI:</strong> Haiti have used a fluid set-up under manager Sebastien Migne, looking to load the midfield. It's unsure if the team are solid enough off the ball, a state they will spend most of their time in in this tournament.</p>
+
+      <br>
+      <h2>6. Who will put the team on their back?</h2>
+      <p><strong>BRA:</strong> One will be enticed to say Neymar for Brazil, hoping the attacker gets a fairytale as his career winds down. However, he is expected to be injured to start the tournament. In his absence, Vini Jr will be expected to carry the mantle. The winger has had a good season despite Real Madrid's troubles and Ancelotti will look to him to lead the side.</p>
+      <p><strong>MAR:</strong> It's no secret that Achraf Hakimi is Morocco's talisman. The PSG man is a truly world-class difference maker and he will be expected to contribute both in attack and in defence for the Atlas Lions.</p>
+      <p><strong>SCO:</strong> Similarly, no one will dispute that it is Scott McTominay who holds the key to Scotland's success in the tournament. His stunning bicycle kick against Denmark laid the foundation for a huge win and he will need to produce more such moments of magic.</p>
+      <p><strong>HAI:</strong> 32-year-old Duckens Nazon is an apt representative of Haiti's struggle to get here. He is the country's all-time top scorer with 44 goals. Playing his club football in Iran, he was in trouble earlier this year with the war situation but has managed to get to camp.</p>
+
+      <br>
+      <h2>7. Who is the rising star?</h2>
+      <p><strong>BRA:</strong> Chelsea's Estevao would have been an easy choice for this section, with Ancelotti holding him in high regard. However, he suffered a hamstring injury in April. In his absence, Bournemouth winger Rayan could grab some attention in this tournament. The tall winger is silky with the ball at his feet and could cause a lot of trouble if used as a substitute.</p>
+      <p><strong>MAR:</strong> 18-year-old Ayyoub Bouaddi has already been earmarked for greatness. He is a regular starter for a Lille side that were quite impressive in Ligue 1 this season as they finished third. This WC could be the tournament following which one of Europe's elite teams pull the trigger on him.</p>
+      <p><strong>SCO:</strong> Another of Bournemouth's attackers, Ben Gannon-Doak could put a season troubled by injury behind him to announce himself on the world stage. He made just 8 league appearances for the Cherries but certainly possesses the talent to achieve higher things.</p>
+      <p><strong>HAI:</strong> Wilson Isidor has recently changed his nationality to play for Haiti and the striker was a solid option for a high-flying Sunderland side. In around 1200 minutes of PL action, he grabbed six goals and could impress in the tournament.</p>
+
+      <br>
+      <h2>8. Who could change the narrative around them or make some noise?</h2>
+      <p><strong>BRA:</strong> For Brazil, Endrick could end the tournament as a key contributor. A dream move to Real Madrid in the summer of 2024 quickly turned into a nightmare as the teenager rarely saw the field. He then moved on loan to Olympique Lyon where he hit the ground running, finishing the season with 12 goal contributions in 16 games. He could convince new Los Blancos boss Jose Mourinho to keep him or interest other top teams in a permanent move for him.</p>
+      <p><strong>MAR:</strong> The answer to this question is Brahim Diaz without a doubt. The attacker became a meme overnight after his audacious (to put it lightly) Panenka was saved in the AFCON final. However, he is still a hugely talented player who will be very keen to exorcise those demons.</p>
+      <p><strong>SCO:</strong> Kieran Tierney will be looking to put his injury issues behind him and become a key player for Clarke's side. He might not start at his preferred left-back slot with Robertson available but the former Arsenal man could chip in with some vital contributions here and there.</p>
+      <p><strong>HAI:</strong> Jean-Ricner Bellegarde has played enough games in the PL without really impressing much. This season, he was a rotational option for a dismal Wolves side but a few good performances in the World Cup could earn the 27-year-old a move back to the PL.</p>
+
+      <br>
+      <h2>9. What will the fans want?</h2>
+      <p><strong>BRA:</strong> Nothing but the sixth title will satisfy Brazilian fans. It has been far too long since the South American giants last won it and expectations will be riding high with the arrival of a manager of Ancelotti's profile.</p>
+      <p><strong>MAR:</strong> In a similar vein, expectations will be high for Morocco who have quickly risen to the upper echelons of football. A deep run in the tournament will no longer be a dream but a minimum requirement for the African side.</p>
+      <p><strong>SCO:</strong> Returning after a long hiatus, Scotland fans will be hopeful of reaching past the group stage and making the knockouts for the first time. The team definitely have enough to make some noise in this tournament.</p>
+      <p><strong>HAI:</strong> Despite the results, it will be a memorable tournament for Haiti. It can only get better for the fans if they get a moment to savour, maybe a goal or maybe even more?</p>
+
+      <br>
+      <h2>10. What is the must-watch game?</h2>
+      <p>Brazil vs Scotland looks to be an interesting clash of styles between Brazil's flair and creativity and Scotland's stability and defensive nous. While Brazil will surely head into the tie as favourites, don't underestimate Scotland's ability to pull off a result here.</p>
+
+      <br>
+      <h2>11. Who gets through and who doesn't?</h2>
+      <p>Brazil and Morocco have more than enough to take spots 1 and 2 in this group, but Scotland could throw among the pigeons here. Haiti unfortunately look well off the level of their opponents and will not qualify.</p>
+
+      <br>
+      <h2>12. Is there a third-place qualifier here?</h2>
+      <p>It's not only possible but also quite likely. The Tartan Army could grab a result against either Brazil or Morocco for sure and combining that with a win against Haiti could get them to a strong 4 points.</p>
+    `,
+  },
+
+  {
+    id:          "group-b-2026-fifa-wc",
+    tag:         "Football",
+    title:       "12 Groups, 12 Previews, 12 Questions: Group B - 2026 FIFA WC",
+    subtitle:    "Hosts Canada line up with Switzerland, Bosnia and Herzegovina and former hosts Qatar.",
+    author:      "Vishal",
+    date:        "1 June 2026",
+    read_time:   "Seven minute read",
+    image_label: "Group B",
+    image_url:   "group-b-cover.webp",
+    image_svg:   FOOTBALL_SVG,
+    image_credit:`Image generated using ChatGPT (OpenAI) from the prompt: "Collage of 4 teams in Group B of the FIFA WC, with the flag maps of the 4 countries occupying the corners and the words Group B in the middle in a minimalist and toned down setting"`,
+    body_html: `
+      <p>Group B is certainly one of the tournament's less glamorous groups. Hosts Canada are joined by Switzerland and Bosnia and Herzegovina from Europe and former hosts Qatar round it up.</p>
+
+      <br>
+      <h2>1. How have they fared?</h2>
+      <p><strong>Canada:</strong> This is just the third appearance at the World Cup for hosts Canada, who will be hoping that this one goes better than those other two. They featured in the 1986 and 2022 editions and displayed great Canadian hospitality by refusing to take a single point. A first win in front of home fans could go a long way.</p>
+      <p><strong>Switzerland:</strong> After the doldrums of the 70s and the 80s, where they never made it to the stage, Switzerland have quietly become a tournament regular with 2026 becoming their sixth straight appearance. Their best finishes include three QF appearances in the 30s and 50s and their recent performances have been three straight exits in the Round of 16.</p>
+      <p><strong>Bosnia and Herzegovina:</strong> Their years as a full FIFA member began only after the 1994 World Cup. Since then, they've secured qualification only once before, featuring in Brazil in 2014. While they did not make the knockouts in that tournament, they opened their account in their last game with a win over Iran and will look for more such results.</p>
+      <p><strong>Qatar:</strong> Qatar's landmark (completely not suspicious) winning bid to host the 2022 World Cup meant they became a team to play in the World Cup without having ever qualified for it. Entering as quite a low-ranked team, they set some unpleasant records, becoming the first ever hosts to lose all their games. They will look to turn their fortunes around this time around.</p>
+
+      <br>
+      <h2>2. How did they get here?</h2>
+      <p><strong>CAN:</strong> Canada had the easiest path, qualifying as hosts alongside Mexico and the USA.</p>
+      <p><strong>SUI:</strong> Switzerland had a comfortable path to arrive here. Drawn in UEFA's Group B in the qualification tournament alongside Kosovo, Slovenia and Sweden, Murat Yakin's men went unbeaten with 4 wins and 2 draws in their games.</p>
+      <p><strong>BIH:</strong> The same UEFA qualification process saw Bosnia and Herzegovina take a slightly longer route. Having been unable to pip Austria in Group H, they entered the second round as runners-up and were put with Italy, Wales and Northern Ireland. A win over Wales on penalties set up a clash with the four-time winning Azzurri who collapsed in the shootout to send the Bosnians to the big dance.</p>
+      <p><strong>QAT:</strong> As one of Asia's highest-ranked sides, Qatar escaped the first round of AFC's (long, convoluted and frankly inane) qualification system. They were unbeaten in the second round (5 wins out of 6) but could not repeat the feat in the next round. Sent to an additional round, they topped a three-team group alongside UAE and Oman to make it here.</p>
+
+      <br>
+      <h2>3. What could go their way…</h2>
+      <p><strong>CAN:</strong> Home support, coaching expertise and real quality in the squad mean Canadians can be hopeful of a genuine run in the 2026 World Cup. Jesse Marsch brings experience from Europe's top leagues and the current crop of players is the best they've ever produced.</p>
+      <p><strong>SUI:</strong> In terms of on-paper talent, none of the teams are really a match for this Switzerland side. This is a truly versatile squad that has great players of different profiles and that ability to lineup in different ways could be indispensable to a team with real potential to go far.</p>
+      <p><strong>BIH:</strong> Bosnia and Herzegovina surprised many by getting here and could spring yet another surprise or two. Former captain Sergej Barbarez has taken over as manager and has completely turned around fortunes for a side that had forgettable years after qualifying in 2014. The team come in with real momentum beating much higher-ranked Wales and Italy to get here, and their solid, cautious approach could cause trouble for their group-mates.</p>
+      <p><strong>QAT:</strong> The most recognisable face for Qatar may not be any of the ones on the pitch, but the one on the sideline, Julen Lopetegui. He has been in charge at the likes of Real Madrid, West Ham and the Spanish national team. If Qatar are to make any noise here they will depend heavily on what he can cook up with his experience.</p>
+
+      <br>
+      <h2>4. … and what may not?</h2>
+      <p><strong>CAN:</strong> Canada's squad, as mentioned before, is not lacking in talent but said talent is lacking in fitness. Both Alphonso Davies and Jonathan David enter the tournament with worrying injury histories and questions around two of their best players could make it difficult for Les Rouges.</p>
+      <p><strong>SUI:</strong> Most teams that do well in these tournaments are the ones with a reliable goalscorer and Switzerland may be lacking in that department. Breel Embolo has spearheaded the attack over the last two major tournaments and had a decent season for Rennes so he should be the primary option. Backup striker Zeki Amdouni is coming off a torn ACL and it remains to be seen how much he can contribute.</p>
+      <p><strong>BIH:</strong> Barbarez's arrival saw a big influx of young players who began their careers in other countries. While that improved the quality of the side, it leaves them as a team lacking in experience on the international stage outside the presence of Edin Dzeko. Adding the factor of inexperience into a side that is known to play on emotions (not a Balkan cliche, really) doesn't really make for a desirable combination.</p>
+      <p><strong>QAT:</strong> For Qatar, this tournament could be a step too high. The Asian side struggled big-time to matchup to bigger teams within the continent during the qualification phase, a probable indicator of the lack of high-level talent in the squad.</p>
+
+      <br>
+      <h2>5. How will they lineup?</h2>
+      <p><strong>CAN:</strong> Marsch has kept things solid and simple in this WC cycle, usually playing a 4-4-2 where one of the frontmen (usually David) plays a deeper role. They are a hardworking team off the ball and will be quite tough to break down.</p>
+      <p><strong>SUI:</strong> A recent change in formation has seen the Swiss change to a back three from a back four, the setup that won them most of their games in the qualification. The 3-4-3 may get the best out of their midfielders and pacy attackers while adding some solidity at the back as well.</p>
+      <p><strong>BIH:</strong> The Dragons are also expected to keep things simple, looking to take games with physical outmatching rather than tactical outclassing. Expect a basic 4-2-3-1 or a 4-4-2 with Dzeko leading the line.</p>
+      <p><strong>QAT:</strong> Lopetegui's insistence to create a team that can control the game as much as possible stems from the fact that Qatar were one of the leakiest defences in their qualification group. It's fair to expect them to load the midfield and use possession as their method to prevent conceding rather than playing in a low block.</p>
+
+      <br>
+      <h2>6. Who will put the team on their back?</h2>
+      <p><strong>CAN:</strong> Alphonso Davies is likely the most talented player to wear Canadian colours and he will be critical to their chances. He's coming off a hamstring injury but his pace and attacking impetus down the left will be huge for the side.</p>
+      <p><strong>SUI:</strong> Midfielder and captain Granit Xhaka will anchor the midfield and provide much-needed experience. The veteran played a huge role in Sunderland securing European qualification after getting promoted and will look to continue that form for his national team.</p>
+      <p><strong>BIH:</strong> Who else but Edin Dzeko? The 40-year-old is still going strong and bagged the late equaliser against Wales to send the game to the shootout. During the qualification stage, he bagged 6 goals including that strike and will be critical for any attacking success.</p>
+      <p><strong>QAT:</strong> Almoez Ali is the side's all-time leading goalscorer, bagging 60 strikes. The 29-year-old holds the record for scoring 9 goals in a single AFC Asian Cup tournament back in 2019 and will be hugely depended on by Lopetegui.</p>
+
+      <br>
+      <h2>7. Who is the rising star?</h2>
+      <p><strong>CAN:</strong> Promise David was having a strong season for Union Saint-Gilloise in the Belgian League and the Champions League before a hip injury ruled him out for the rest of the campaign. The tall striker has earned the nickname 'mini Osimhen' for his skillset and could be a difference-maker for Canada if he's fit enough. (This is really becoming a common 'if' for Canada, isn't it?)</p>
+      <p><strong>SUI:</strong> Freiburg's Johan Manzambi is already earning links to Europe's top clubs after a strong season in the Bundesliga. The 20-year-old midfielder will hugely benefit if he plays alongside Xhaka and could announce himself on the world's biggest stage.</p>
+      <p><strong>BIH:</strong> Esmir Bajraktarevic may not have been a key starter but played enough minutes for a PSV side that lifted the Eredivisie with ease. He chipped in with 7 goals and 5 assists in the season and is probably the most talented of Bosnia and Herzegovina's current young crop.</p>
+      <p><strong>QAT:</strong> Mohamed Al-Mannai has been a regular feature for the side under Lopetegui. The midfielder began his career at Qatari giants Al-Sadd and will need to play a massive role if Qatar are to get anywhere.</p>
+
+      <br>
+      <h2>8. Who could change the narrative around them or make some noise?</h2>
+      <p><strong>CAN:</strong> Cyle Larin spent the second half of the 2025/26 campaign at Southampton on loan and bagged 9 goal contributions in just 853 minutes of league action. The 31-year-old could have seen some Premier League action if not for the Saints' naughty activities but will be raring to impress, having already played a critical role for the national side in the last WC cycle.</p>
+      <p><strong>SUI:</strong> Noah Okafor had an ugly falling out with the manager in 2024 and was almost exiled from the national side before solving his differences. He was a critical player for Leeds in the Premier League, bagging 8 league goals and could make a statement in the tournament.</p>
+      <p><strong>BIH:</strong> Ermedin Demirovic has been one of Bundesliga's most solid strikers in recent memory, collecting 27 goals over the past two seasons for Stuttgart. This could well be the tournament where the 28-year-old takes over the torch as the side's frontman from Dzeko.</p>
+      <p><strong>QAT:</strong> 29-year-old Akram Afif is a two-time winner of the Asian Player of the Year award and could be a major presence in the Maroons' squad. He is one of the few players in the squad to have played in Europe and that experience will prove critical on this stage.</p>
+
+      <br>
+      <h2>9. What will the fans want?</h2>
+      <p><strong>CAN:</strong> Canadian fans will be hoping this tournament marks the start of what could be their golden generation in the sport. We have seen teams fail when that term has been thrown around but Marsch's men will be hoping to avoid that and look to win their first game in the World Cup and go from there.</p>
+      <p><strong>SUI:</strong> Switzerland have shown glimpses of being real contenders in the Euros consistently but have been unable to translate that at the World Cup. A run to the last eight would mark a strong tournament for Murat Yakin and his men.</p>
+      <p><strong>BIH:</strong> For Bosnia and Herzegovina, there will be hopes of making their first-ever knockout stages. There is certainly enough in this squad to pip Canada and Qatar to the second spot in the group.</p>
+      <p><strong>QAT:</strong> In 2022, Qatar were shown their place pretty quickly, looking largely unimpressive in their campaign. Fans will be looking forward to more of a fight from their players in a group where they could throw some surprises.</p>
+
+      <br>
+      <h2>10. What is the must-watch game?</h2>
+      <p>Canada vs Bosnia and Herzegovina in the group opener will be one to watch not just for the atmosphere but also for the importance the tie holds. A fast start for either side will be a huge boost to their chances of progressing.</p>
+
+      <br>
+      <h2>11. Who gets through and who doesn't?</h2>
+      <p>Switzerland are a good bit better than everyone else in this group and it's quite unlikely they will slip up. Canada are slightly better than Bosnia but it could go either way. Qatar will be hoping for a miracle.</p>
+
+      <br>
+      <h2>12. Is there a third-place qualifier here?</h2>
+      <p>Possible. Qatar should be seen off comfortably by the three other teams and thus a draw and a win with favourable goal difference could take Bosnia or Canada to the last 32.</p>
+    `,
+  },
+
+  {
+    id:          "group-a-2026-fifa-wc",
+    tag:         "Football",
+    title:       "12 Groups, 12 Previews, 12 Questions: Group A - 2026 FIFA WC",
+    subtitle:    "Hosts Mexico are joined by former hosts South Korea and South Africa, and a returning Czechia.",
+    author:      "Vishal",
+    date:        "31 May 2026",
+    read_time:   "Seven minute read",
+    image_label: "Group A",
+    image_url:   "group-a-cover.webp",
+    image_svg:   FOOTBALL_SVG,
+    image_credit:`Image generated using ChatGPT (OpenAI) from the prompt: "Collage of 4 teams in Group A of the FIFA WC, with the flag maps of the 4 countries occupying the corners and the words Group A in the middle in a minimalist and toned down setting"`,
+    body_html: `
+      <p>Welcome to the start of UVP Sports' preview of the biggest spectacle in the world of sport. Over the next 12 days, we'll bring you all the information you need to understand what is going to go down in Mexico, Canada and the USA (the last one, we're actually not sure what might go down) in June and July by asking and answering 12 questions.</p>
+      <p>We start with Group A, where hosts Mexico are with former hosts South Korea and South Africa and the returning Czechia.</p>
+
+      <br>
+      <h2>1. How have they fared?</h2>
+      <p><strong>Mexico:</strong> They enter with a quite fairly mediocre record at the World Cup. El Tri's best finishes have both come in the previous century, reaching the last eight in 1970 and 1986. From the 1994 edition, they began a run of Round of 16 exits, the streak reaching an incredible seven straight losses in this stage until the 2022 World Cup rolled around where they did well to break it by not even making the stage.</p>
+      <p><strong>South Korea:</strong> One of Asia's great big hopes, South Korea will hope to make a strong run in a tournament where they made history as the first non-European or American team to make the final four, a feat they (admittedly controversially) achieved in 2002 as hosts. They've been unable to recapture that magic, oscillating between group stage and Ro16 exits. Last time around, they edged Uruguay out on goals scored to reach the knockouts only to suffer a 4-1 loss to Brazil.</p>
+      <p><strong>South Africa:</strong> 2026 will be just the fourth appearance here for South Africa. They captured hearts in 2010 as hosts but have failed to make the dance ever since. They've developed well in recent years and could be in a good position to make their first ever knockout stage with some solid performances.</p>
+      <p><strong>Czechia:</strong> Two-time runners up (again, admittedly, as Czechoslovakia) Czechia end a 20-year hiatus to return to the World Cup. Their record following the split in 1993 has been forgettable at best, making the tournament only once in 2006 where they crashed out in the group stage.</p>
+
+      <br>
+      <h2>2. How did they get here?</h2>
+      <p><strong>MEX:</strong> Mexico enjoy the hosts' benefit, entering the group stage without needing to play the CONCACAF qualifiers.</p>
+      <p><strong>KOR:</strong> South Korea entered the qualifying pool as Asia's fourth-highest ranked team on FIFA's list, earning a first-round bye in AFC's format. A 6-game unbeaten run in the second round was followed by a 10-game unbeaten run in the third round as Hong Myung-bo's men waltzed through their competition to arrive here.</p>
+      <p><strong>RSA:</strong> One can argue that South Africa are among the beneficiaries of the expansion of the tournament to 48 teams, with the allotted slots to Africa increasing from 5 to 9. Regardless, Bafana Bafana were excellent in their qualification, pipping giants Nigeria to top spot in their group to secure their spot.</p>
+      <p><strong>CZE:</strong> A similar argument can be made for Czechia, with 16 out of the 48 teams coming from Europe. They failed to secure qualification in the first round, finishing second to Croatia in their group and entering the play-off path. There, they played two nailbiters, nudging past Ireland and Denmark on penalties.</p>
+
+      <br>
+      <h2>3. What could go their way…</h2>
+      <p><strong>MEX:</strong> It might be a cliche, but for Mexico to break their famous 'quinto partido' curse (the curse of not playing a fifth match aka getting a knockout win), the home fans are going to play an absolutely critical role. We've seen how home fans can bolster teams - South Korea's miracle run, Russia's strong 2018 outing are some examples that come to mind.</p>
+      <p><strong>KOR:</strong> South Korea's hopes will largely rest on their likely starting front three, filled with European experience, pedigree and talent. Despite not playing in England anymore and failing to score in MLS this year, Son Heung-min retains the ability to change the game like few others do. At PSG, Lee Kang-in may be on the outside looking in but still possesses the caliber to make a difference. Similarly, Hwang Hee-chan may have been in a dreadful relegated Wolves side but being a former double-digit scorer in the Premier League is nothing to sniff at.</p>
+      <p><strong>RSA:</strong> Hugo Broos has put in some great work to transform South Africa, a country hoping to be a regular at continental and international tournaments. Reports suggest that the Belgian is a disciplinarian coach and structural rigidity and being hard to break down are qualities that always translate well to tournament football.</p>
+      <p><strong>CZE:</strong> Pressure might be on the cards for a side entering their first World Cup in 20 years but the Czechia squad seems to possess enough experience to hold nerves. The likes of Tomas Soucek, Vladimir Coufal and Vladimir Darida have years of experience in Europe's top leagues between them.</p>
+
+      <br>
+      <h2>4. …and what may not?</h2>
+      <p><strong>MEX:</strong> There are some recognisable names up front and in midfield for Mexico but the backline could be a cause of concern. There has also been some eyebrows raised over the goalkeeping situation as expected starter Luis Malagon suffered an Achilles rupture in March ruling him out. It remains to be seen if Javier Aguirre goes back to Ochoa's experience or opts for Guadalajara's Raul Rangel.</p>
+      <p><strong>KOR:</strong> Rumours are swirling around the atmosphere surrounding the team, with reports claiming that fans are largely not pleased with the work of manager Myung-bo. A legend in his own right in his playing days, the 57-year-old led the side during their 2014 campaign which ended without a win and questions have been asked over his ability to perform at this stage again.</p>
+      <p><strong>RSA:</strong> Despite an overall improvement in their fortunes, South Africa have been wrecked by a pattern of inconsistency under Broos. They put in strong performances against higher-ranked Nigeria in both of their qualifying fixtures but failed to beat the likes of Rwanda and Zimbabwe, games they really had no business not winning. Further, the level of competition might just be a little too high in all honesty for this side.</p>
+      <p><strong>CZE:</strong> A stunning loss to Faroe Islands certainly played a role in Czechia taking a longer route to get to the World Cup. Tomas Soucek was stripped of captaincy in November 2025 after the side's 6-0 win over Gibraltar in an incident involving fans. While cooler, more mature heads should prevail, ugly incidents like these could stop their campaign before it even begins.</p>
+
+      <br>
+      <h2>5. How will they line up?</h2>
+      <p><strong>MEX:</strong> Edson Alvarez will anchor a solid midfield that is likely to feature Erik Lira and Gilberto Mora. Raul Jimenez is sure to start at front and Santiago Gimenez's recovery from injury will determine how much of a role he plays.</p>
+      <p><strong>KOR:</strong> South Korea switched from a back four to a back three late in their qualification group, a move that caused some confusion. A central role for Son is likely with Lee set to occupy one of the wings but further down questions remain for the Asian side.</p>
+      <p><strong>RSA:</strong> It's going to be the KISS principle here - Keep It Simple, South Africa. They have used different formations but will mostly go with a standard 4-2-3-1. Burnley's Lyle Foster will spearhead the attack alongside wingers Tshepang Moremi and Oswin Appollis, if recent fixtures are to go by.</p>
+      <p><strong>CZE:</strong> A back three is definitely the way to go to get the best out of Czechia's best individual players. Getting balls in to their striker Patrick Schick will be their primary strategy to carve wins out.</p>
+
+      <br>
+      <h2>6. Who will put the team on their back?</h2>
+      <p><strong>MEX:</strong> Fulham's Raul Jimenez. A career rivalling many works of fiction - coming back to the sport from a disastrous skull injury, suffering through further physical issues in the last World Cup, this home tournament presents a delightful chance to the veteran to establish himself as one of if not the greatest Mexicans to play the sport.</p>
+      <p><strong>KOR:</strong> South Korea's fortunes hang on the boots of Son Heung-min. He leads MLS in assists at the time of writing but is yet to score and these mixed signals will cause concern among fans.</p>
+      <p><strong>RSA:</strong> Teboho Mokoena in midfield will be critical if the African side have any hopes of progressing further in the tournament. He is expected to anchor the side as a 6 or play a further role.</p>
+      <p><strong>CZE:</strong> Frontman Patrik Schick will need to carry his form from towards the end of the season, including a spell where he bagged 9 goals in 6 games. His 8 goals in qualifying were critical for the side and they will continue to depend on him.</p>
+
+      <br>
+      <h2>7. Who is the rising star?</h2>
+      <p><strong>MEX:</strong> Gilberto Mora is a name whose performances have caught eyes across the Atlantic. The diminutive 17-year-old has already made around 50 pro appearances and could have a huge responsibility on his young shoulders.</p>
+      <p><strong>KOR:</strong> Jens Castrop, the first foreign-born player to feature for the Taegeuk Warriors, played a solid role for Borussia Monchengladbach this year. The 22-year-old's versatility could be key for a side finding their defensive identity.</p>
+      <p><strong>RSA:</strong> 21-year-old Relebohile Mofokeng was the winner of the South African league's young player of the year, bagging double-digit goals for Orlando Pirates. He could provide some much-needed spark in attack for a side that may struggle to score.</p>
+      <p><strong>CZE:</strong> At 25, Pavel Sulc may not be the youngest in this list but he has all the makings of a late bloomer. The attacker excelled for Lyon with 25 goal contributions this season and provides much-needed impetus alongside Schick.</p>
+
+      <br>
+      <h2>8. Who could change the narrative around them or make some noise?</h2>
+      <p><strong>MEX:</strong> Putting a forgettable stint at Besiktas behind him, Edson Alvarez will be raring to go at this World Cup. He is set to return to a relegated West Ham side so he may not stay with the Londoners but a strong World Cup will certainly invite suitors for the former Ajax star.</p>
+      <p><strong>KOR:</strong> Lee Kang-in has been relegated to the shadows at PSG but definitely possesses the talent to do well in Europe's big leagues, as evidenced by his stint in La Liga. A few good performances here could get him a new home in Europe, one where he won't warm the bench.</p>
+      <p><strong>RSA:</strong> Lyle Foster had a few bright moments in what was a dreadful season for Burnley. He will hope to have better fortunes on the international stage and maybe find a new home either in the Championship or the Premier League with a promoted side.</p>
+      <p><strong>CZE:</strong> Matej Kovar spent a lot of time in Manchester United's youth setup but failed to impress, eventually moving to Germany before settling at PSV Eindhoven. This year, the shotstopper was brilliant for the side as they won the Eredivisie and he could earn a move to the top 5 leagues as well.</p>
+
+      <br>
+      <h2>9. What will the fans want?</h2>
+      <p><strong>MEX:</strong> It is undoubtedly the quinto partido that will be on the minds of Mexicans. The stars look aligned well this time, with a fairly easy group and raucous home support but Javier Aguirre's men will need to seize the moment here to create a memorable campaign.</p>
+      <p><strong>KOR:</strong> South Korea fans will be hoping that their team finds a patch of form and plays solid football. They enter the tournament with an ordinary run of results and will need to do really well to turn their fortunes around.</p>
+      <p><strong>RSA:</strong> For South Africa, it will be moments of joy. As it stands, Bafana Bafana look well outmatched with a difficult draw but a win here or there or an opportunity to play spoilsport will be enticing.</p>
+      <p><strong>CZE:</strong> A run to the knockout stage would delight Czechia fans. A long-awaited return to the tournament will only be made sweeter if they get past the group stage and they are primed to do so, especially with the availability of the third-place qualification spot.</p>
+
+      <br>
+      <h2>10. What is the must-watch game?</h2>
+      <p>The tournament opener, Mexico vs South Africa. The 87,500 capacity Estadio Azteca in Mexico City will be absolutely bouncing on June 11 and the atmosphere will certainly be one to remember for a long time.</p>
+
+      <br>
+      <h2>11. Who gets through and who doesn't?</h2>
+      <p>Expect Mexico to go through and comfortably so, topping the group. Besides the fan support, the altitude will also work in their favour. Czechia seem best positioned to seize second, even though one may argue South Korea boast more talent in their ranks. South Africa will surprise many if they don't finish last.</p>
+
+      <br>
+      <h2>12. Is there a third-place qualifier here?</h2>
+      <p>Could be. South Korea or Czechia could get 4 points with a win over South Africa and a possible point from the other two, which should be enough for either team to finish as one of the best eight.</p>
     `,
   },
 ];
@@ -174,7 +432,9 @@ function renderArticle(a){
     <article class="article-body">
       ${a.body_html}
       <div class="article-end">&#x273B; &#x273B; &#x273B;</div>
-    </article>`;
+    </article>
+
+    ${a.image_credit ? `<p class="image-credit">${esc(a.image_credit)}</p>` : ""}`;
 }
 
 /* ── 5. Router ──────────────────────────────────────────────────── */
@@ -198,6 +458,30 @@ function render(){
 }
 
 $("back-link").onclick = () => location.hash = "#/";
+
+$("share-link").onclick = async () => {
+  const btn = $("share-link");
+  try {
+    await navigator.clipboard.writeText(location.href);
+  } catch (e) {
+    // Fallback: select-and-copy via a temporary textarea
+    const ta = document.createElement("textarea");
+    ta.value = location.href;
+    ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch (_) {}
+    document.body.removeChild(ta);
+  }
+  btn.textContent = "Copied";
+  btn.classList.add("copied");
+  clearTimeout(btn._t);
+  btn._t = setTimeout(() => {
+    btn.textContent = "Share";
+    btn.classList.remove("copied");
+  }, 1500);
+};
+
 window.addEventListener("hashchange", render);
 
 renderIssueBar();
