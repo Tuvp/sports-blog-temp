@@ -435,7 +435,7 @@ body.article-active .article-view{ display: block; }
   .masthead{ padding: 44px 0 24px; }
   .masthead-title{ font-size: 40px; }
   .masthead-title-row{ gap: 14px; }
-  .masthead-logo{ height: 84px; }
+  .masthead-logo{ height: 52px; }
   .masthead-sub{ font-size: 13px; }
 
   .article-card{ grid-template-columns: 1fr; gap: 22px; padding: 28px 0; }
@@ -460,6 +460,8 @@ body.article-active .article-view{ display: block; }
 @media (max-width: 400px){
   .container{ padding: 0 16px; }
   .masthead-title{ font-size: 34px; }
+  .masthead-title-row{ gap: 10px; }
+  .masthead-logo{ height: 42px; }
   .article-title{ font-size: 24px; }
   .article-hero-title{ font-size: 34px; }
 }
