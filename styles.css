@@ -231,6 +231,16 @@ body::before{
   color: var(--ink-3);
   margin: 0;
 }
+.site-footer-text a,
+.article-footer-text a{
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.site-footer-text a:hover,
+.article-footer-text a:hover{
+  color: var(--accent);
+}
 
 /* ─ Article view ───────────────────────────── */
 .home-view{ display: block; }
