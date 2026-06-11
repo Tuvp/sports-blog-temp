@@ -79,6 +79,18 @@
   </div>
 </div>
 
+<!-- NOT FOUND ────────────────────────────────────────────────────── -->
+<div class="not-found-view">
+  <div class="container">
+    <nav class="article-nav">
+      <button class="back-link" type="button">Back to all stories</button>
+      <div class="mini-masthead"><em>The Unmaiyana Vetti People</em></div>
+      <span></span>
+    </nav>
+    <p class="not-found-message">Looks like you are too early, we haven't written this article yet.</p>
+  </div>
+</div>
+
 <!-- ARTICLE ──────────────────────────────────────────────────────── -->
 <div class="article-view">
   <div class="container">
@@ -205,7 +217,7 @@ function navigate(path){
 }
 
 function render(){
-  document.body.classList.remove("article-active");
+  document.body.classList.remove("article-active", "not-found-active");
 
   // Prefer the clean path (new); fall back to the legacy hash form.
   let articleId = null;
@@ -229,12 +241,25 @@ function render(){
       window.scrollTo({ top: 0, behavior: "instant" });
       return;
     }
+    // Article ID given but no matching article → not found.
+    document.body.classList.add("not-found-active");
+    window.scrollTo({ top: 0, behavior: "instant" });
+    return;
   }
+
+  // Any unknown non-root path → not found.
+  if (location.pathname !== "/" && location.pathname !== "/index.html") {
+    document.body.classList.add("not-found-active");
+    window.scrollTo({ top: 0, behavior: "instant" });
+    return;
+  }
+
   // Default: home view
   window.scrollTo({ top: 0, behavior: "instant" });
 }
 
-$("back-link").onclick = () => navigate("/");
+// One handler for every "Back to all stories" button (article view + not-found view).
+document.querySelectorAll(".back-link").forEach(b => b.onclick = () => navigate("/"));
 
 $("share-link").onclick = async () => {
   const btn = $("share-link");

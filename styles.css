@@ -245,8 +245,23 @@ body::before{
 /* ─ Article view ───────────────────────────── */
 .home-view{ display: block; }
 .article-view{ display: none; }
+.not-found-view{ display: none; }
 body.article-active .home-view{ display: none; }
 body.article-active .article-view{ display: block; }
+body.not-found-active .home-view{ display: none; }
+body.not-found-active .not-found-view{ display: block; }
+
+.not-found-message{
+  text-align: center;
+  padding: 100px 20px 140px;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 19px;
+  color: var(--ink-3);
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
 
 .article-nav{
   display: grid;
