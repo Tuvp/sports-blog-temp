@@ -20,6 +20,98 @@ const FOOTBALL_SVG = `
 
 const ARTICLES = [
   {
+    id:          "group-l-2026-fifa-wc",
+    tag:         "Football",
+    title:       "12 Groups, 12 Previews, 12 Questions: Group L - 2026 FIFA WC",
+    subtitle:    "England chase their first crown since 1966, Croatia's veteran core hopes for one last run, with Ghana and Panama rounding off the field.",
+    author:      "Vishal",
+    date:        "11 June 2026",
+    read_time:   "Seven minute read",
+    image_label: "Group L",
+    image_url:   "cover/group-l-cover.webp",
+    image_svg:   FOOTBALL_SVG,
+    image_credit:`Image generated using ChatGPT (OpenAI) from the prompt: "Collage of 4 teams in Group L of the FIFA WC, with the flag maps of the 4 countries occupying the corners and the words Group L in the middle in a minimalist and toned down setting"`,
+    body_html: `
+      <p>This rounds off our series on UVP Sports covering the World Cup before it starts. Group L plays host to England's perennially optimistic (delusional?) fans and they'll be joined by fellow European giants Croatia. Ghana are the 10th African team to feature in this World Cup and Panama are our final team in the tournament.</p>
+
+      <br>
+      <h2>1. How have they fared?</h2>
+      <p><strong>England:</strong> For over 50 years, England have been looking to repeat their feats at the home 1966 World Cup where they lifted the trophy. They've been a regular in the knockout stages ever since but have not even made the finals since, their best finish being fourth place in both 1990 and 2018. Last time out in Qatar they exited in the last eight at the hands of France after Harry Kane blazed a penalty over the bar.</p>
+      <p><strong>Croatia:</strong> They might earn the title for being the most efficient team in the history of the World Cup. In just 6 appearances at this stage, they have grabbed 3 medals - one runners-up and two third-place. That finals loss came in 2018 to a runaway France side led by Kylian Mbappe. In 2022 also they suffered a loss to the eventual winners, losing to Argentina in the semis.</p>
+      <p><strong>Ghana:</strong> This is Ghana's 5th time featuring in a World Cup. Their most notable run ended in the last eight in 2010 in South Africa, a controversy that many will not forget. Luis Suarez's deliberate handball denied the Ghanaians a certain goal and they eventually lost on penalties. In Qatar, they were unable to get past the group stage where they were drawn with Portugal, South Korea and Uruguay.</p>
+      <p><strong>Panama:</strong> Panama return to the World Cup after eight years after a memorable qualification campaign earned them their first appearance in 2018. While they struggled to make a mark back in Russia, they will be hopeful of making a better account of themselves here in North America.</p>
+
+      <br>
+      <h2>2. How did they get here?</h2>
+      <p><strong>ENG:</strong> It was a perfect run for the Three Lions in their qualification campaign, winning eight of their eight games in UEFA's Group K. They scored 22 goals in these games but more notably did not concede a single goal, indicating their dominance over their opponents.</p>
+      <p><strong>CRO:</strong> Croatia were also impressive in England's neighbouring Group L, bagging 7 wins and 1 draw in their 8 games. They were slightly better in front of goal scoring 26 times but let in 4 to match England's +22 goal difference.</p>
+      <p><strong>GHA:</strong> The Black Stars showed up strong in CAF's Group I and comfortably bagged top spot to book their tickets to the World Cup. 8 wins and 1 draw in their 10 games with a healthy +17 goal difference was enough to progress, with the only blip being an away 1-0 loss to Comoros.</p>
+      <p><strong>PAN:</strong> With CONCACAF's 3 slots taken away by the hosts, the other teams had to fight hard to make up the 3 remaining spots. Panama's unbeaten run in Group A helped them achieve that as they finished with 3 wins and 3 draws from their 6 games against Suriname, Guatemala and El Salvador.</p>
+
+      <br>
+      <h2>3. What could go their way…</h2>
+      <p><strong>ENG:</strong> Gareth Southgate's defensive managerial style was the cause of many heated debates during his tenure, with many believing that the approach was holding back a side capable of higher achievements. Now, under Thomas Tuchel, England have begun to take a more pragmatic tactical setup, choosing the right moments to play attacking or defensive football. Combined with the sheer quality of the squad, it could help them go a long way in the tournament.</p>
+      <p><strong>CRO:</strong> Stability and experience are the two key factors that will drive any run in this World Cup for Croatia. The core of Luka Modric, Mateo Kovacic and Ivan Rakitic has been retained from their 2018 run and they will be keen on going one step further here eight years later.</p>
+      <p><strong>GHA:</strong> Pace, pace and more pace characterizes Ghana's forwards who could cause huge issues on the transition. The likes of Antoine Semenyo, Inaki Williams and Abdul Fatawu can all cover ground in a jiffy and that will make a simple counter-attacking tactical set-up difficult to stop if things go well.</p>
+      <p><strong>PAN:</strong> Although it was against lower opponents, Panama's impeccable record without a loss in qualifying will provide them with some optimism heading into the World Cup. Their defensive set-up has the ability to frustrate teams and that could play into their hands.</p>
+
+      <br>
+      <h2>4. … and what may not?</h2>
+      <p><strong>ENG:</strong> It might be a common funny trope but at one level it does ring true - do these England players have the mettle to step up in clutch situations? Glimpses were shown in the 2024 Euros but it eventually ended in heartbreak. Should one of their knockout games go to a shootout, fans will have their hearts in their mouths even though England possess a slew of good penalty takers.</p>
+      <p><strong>CRO:</strong> With experience comes the caveat for Croatia - they still rely heavily on some of their older legs. Modric enters the tournament having undergone surgery for a broken cheekbone. The likes of Perisic, Kramaric and Kovacic who are all expected to play key roles are well into their 30s and that could be a cause of concern.</p>
+      <p><strong>GHA:</strong> Current Ghana manager Carlos Queiroz was appointed on April 13. That means he has only about 60 days between his appointment and the African side's first game in the World Cup. This extremely short turnaround is certainly not enough for him to get his ideas through to the players and that could result in issues.</p>
+      <p><strong>PAN:</strong> Panama have been dealt a tough hand here, being drawn in a group with three other sides that are considerably better. There is not enough quality anywhere in the squad to stand up to their opponents and they may have a very difficult time in this tournament.</p>
+
+      <br>
+      <h2>5. How will they line up?</h2>
+      <p><strong>ENG:</strong> England's formations are usually quite different on the field from what is named on the paper. It all revolves around Harry Kane's unique skillset to drop deep and link play up, meaning Tuchel will opt for wingers who can get in behind and find the back of the net regularly. Width can also come from the full-backs while one of the midfielders will stay deep to provide solidity.</p>
+      <p><strong>CRO:</strong> Croatia are certain to line up with 3 at the back with Josko Gvardiol and Josip Sutalo in the back three. Ahead of them, they could use a lone striker or a pair as evidenced by their recent friendlies. Width will come from the high-flying energetic wing-backs supplementing the creativity of Modric from midfield.</p>
+      <p><strong>GHA:</strong> A host of injuries to key players like Mohammed Kudus and Mohammed Salisu combined with the aforementioned extremely late appointment of the manager leaves their tactical setup unclear. They will probably keep it simple and play a 4-2-3-1 to get the best out of their wingers where most of their talent lies.</p>
+      <p><strong>PAN:</strong> Panama might spend a sizeable portion of the tournament in damage control mode rather than actively seeking points and this makes it all but certain they'll use a back 5. It'll be their only strategy to thwart their opponents and maybe grab a point or two.</p>
+
+      <br>
+      <h2>6. Who will put the team on their back?</h2>
+      <p><strong>ENG:</strong> Entering the World Cup on the back of one of the best seasons for any player, let alone a forward, in recent memory, Harry Kane will be expected to carry his club level exploits onto the world's grandest stage. The striker bagged a stunning 61 goals across all competitions and will be England's talisman in front of goal.</p>
+      <p><strong>CRO:</strong> Even at 40, Luka Modric possesses a threat to unlock a game with a single pass like few others do. In what is certain to be his swansong for the national side, he will be keen to end on a high note and carry the side to a deep run in the tournament.</p>
+      <p><strong>GHA:</strong> Antoine Semenyo hit the spotlight as one of the most dangerous wingers in the Premier League this season, bagging a move to Manchester City from Bournemouth in the January transfer window. His diverse skillset makes him a potent threat to any defender in the world and Ghana will be banking on him to deliver top-tier performances.</p>
+      <p><strong>PAN:</strong> 36-year-old Anibal Godoy was around for Panama's first appearance in the World Cup back in 2018. The captain and the country's all-time leader in appearances, he will be keen on providing fans with a better performance this time out.</p>
+
+      <br>
+      <h2>7. Who is the rising star?</h2>
+      <p><strong>ENG:</strong> At just 21, Nico O'Reilly looks all set to be England's youngest starter in the World Cup. Originally a midfielder, he was re-profiled by Pep Guardiola at Manchester City and has grown into a seriously good player, contributing in both facets of the game from left-back.</p>
+      <p><strong>CRO:</strong> Defender Luka Vuskovic has turned a lot of heads on loan at Hamburger from Tottenham and has become one of the hottest young prospects in world football. The centre-back has a huge imposing presence and can also chip in with vital contributions from set-pieces.</p>
+      <p><strong>GHA:</strong> A strong combination of physicality and technical excellence, 20-year-old Caleb Yirenkyi has blossomed into an excellent midfielder under the tutelage of Michael Essien as coach at Danish side Nordsjaelland. This tournament is an excellent opportunity for him to showcase his talent and maybe grab a move to one of Europe's elite.</p>
+      <p><strong>PAN:</strong> Panama coach Thomas Christiansen has banked on experience a lot and thus there are very few young players. Still, we'll go for central defender Jose Cordoba who was a key player for Norwich in the Championship and is expected to anchor the backline for Los Canaleros.</p>
+
+      <br>
+      <h2>8. Who could change the narrative around them or make some noise?</h2>
+      <p><strong>ENG:</strong> Marcus Rashford's decline from a certain world-beater to a fringe player will have been tough to watch for Manchester United fans. He joined Barcelona on loan this season and played a solid role but the move is not expected to be made permanent. If he can recapture his old magic in the World Cup, he could seize a spot in United again or find a new home.</p>
+      <p><strong>CRO:</strong> The versatile Josip Stanisic has quietly grown into a key player under Vincent Kompany at Bayern Munich. He can play across the backline and could make some noise with his performances in North America.</p>
+      <p><strong>GHA:</strong> The veteran forward Jordan Ayew is currently without a club, becoming a free agent after being released by Leicester following their disastrous season that ended in relegation. He's close to breaking his brother Andre's record to become Ghana's most-capped player and will be hoping to perform well and find a new employer soon.</p>
+      <p><strong>PAN:</strong> Adalberto Carrasquilla, fondly known as Coco, is considered a vital player in midfield for Panama. Featuring for Mexican side UNAM Pumas at the club level, he could earn some plaudits here with his performances at the World Cup.</p>
+
+      <br>
+      <h2>9. What will the fans want?</h2>
+      <p><strong>ENG:</strong> The loud and sometimes (ok mostly) obnoxious England fans have been screaming 'It's coming home!' at the start of every major tournament for decades now. They will hope to see the Jules Rimet actually coming home this time.</p>
+      <p><strong>CRO:</strong> This might be the farewell to a golden generation in Croatian football as their top players are unlikely to be active for the 2030 World Cup. Fans will be hopeful that this bunch of footballers can end their international career on a high.</p>
+      <p><strong>GHA:</strong> The situation surrounding the Ghanaian side will not leave many fans in high hopes but there's certainly enough in the squad to make some noise. They will be hoping to make the knockouts and go from there.</p>
+      <p><strong>PAN:</strong> It looks all set to be a difficult time out in North America for Panama but fans will hope they can get some moments to cherish. Some may vividly remember how they happily celebrated their first goal in the World Cup back in 2018 even though they lost 6-1.</p>
+
+      <br>
+      <h2>10. What is the must-watch game?</h2>
+      <p>England vs Croatia to open the group might well decide the future of both teams in this tournament. The last time these two met in a high-profile tournament was in the 2020 Euros where the Three Lions won 1-0 and the Croatians will be keen on exacting revenge.</p>
+
+      <br>
+      <h2>11. Who gets through and who doesn't?</h2>
+      <p>England and Croatia will occupy spots 1 and 2 but who goes where depends on their fixture. Ghana will find it difficult to upset one of the two European sides while the fairy tale is sure to end here for Panama.</p>
+
+      <br>
+      <h2>12. Is there a third-place qualifier here?</h2>
+      <p>There's a lot riding on Ghana to not only grab three points from what will be a resolute Panama side but also to hold one of England and Croatia to a draw to reach four points. It seems difficult considering their squad makeup but is certainly not out of the possibility.</p>
+    `,
+  },
+
+  {
     id:          "group-k-2026-fifa-wc",
     tag:         "Football",
     title:       "12 Groups, 12 Previews, 12 Questions: Group K - 2026 FIFA WC",
