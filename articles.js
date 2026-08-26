@@ -20,6 +20,61 @@ const FOOTBALL_SVG = `
 
 const ARTICLES = [
   {
+    id:          "fantrax-fpl-draft-2026-27",
+    tag:         "Football",
+    title:       "Fantasy Premier League Draft: An Hour of Strategy, Some Surprises and A Lot More Irritations",
+    subtitle:    "Twelve teams, sixteen rounds and a ghost scoring system on Fantrax — how drafting from the seventh pick actually went for us.",
+    author:      "Vishal",
+    date:        "26 August 2026",
+    read_time:   "Five minute read",
+    image_label: "FPL Draft",
+    image_url:   "cover/fantrax_draft_aug26_cover.webp",
+    image_svg:   FOOTBALL_SVG,
+    image_credit:`Image generated using Nano Banana (Google).`,
+    body_html: `
+      <p>With the Premier League season right around the corner, we at UVP Sports wanted to throw some light on a fun little event we did recently, something that has become a yearly tradition at this point for us. We joined a Fantasy Premier League group.</p>
+
+      <p>I can hear the grumbles and moans - "Did this dude think this was something unique?". But hold on to your hats, folks, for this is not the usual kind of FPL group. Hosted on Fantrax, this presents a completely different challenge. It runs on what is called a ghost scoring system, meaning points are awarded not only for goals, assists and clean sheets but for every action on and off the ball taken by players, including things like key passes, second assists, interceptions, blocks etc.</p>
+
+      <p>And we were up against some really smart people, people possessing what one might call elite ball knowledge. This was a huge source of frustration to us, as what we felt could be sneaky, under-the-radar picks were getting nabbed under our noses left and right. In all, there were 12 teams in a 16-round snake draft and we were dealt what we thought was the worst draft position - 7th.</p>
+
+      <p>That put us in a difficult spot because we had no idea who we'd be getting. The aforementioned scoring system means creative players, controlling metronomic midfielders and defensive stalwarts end up being the best contributors. For context, Bruno Fernandes has led the league for the past few years in a row, tallying 597 points, 80+ points better than second place. The likes of Declan Rice and Elliot Anderson would also fit the second mold and thus we felt would be impossible for us to get.</p>
+
+      <p>Still, we were keen on identifying players who either haven't had the best seasons in recent memory or are new(ish) entrants into the league looking to make a mark. Among the forwards, we had Bournemouth's Rayan and Fulham's Gonzalo Garcia as possible options. Rayan had a brilliant second half of the campaign last year, replacing Semenyo in the January transfer window and earning Ancelotti's trust in national colours in the World Cup. Garcia, meanwhile, impressed in the Club World Cup but the turbulence at Real Madrid meant he couldn't show his skills at the Spanish capital. Other hopefuls on our list included the exciting teenager Brian Madjo and Liverpool's new signing Victor Munoz and we were confident of grabbing one of these four. (Spoiler alert: we got none.)</p>
+
+      <p>Among the midfielders, we were really impressed with Brentford's record signing Mamadou Sangare. The former RC Lens man has the potential to become a key presence for the Bees. Johan Manzambi, who caught eyes in the World Cup with Switzerland was also a target, while other names on the list included Sunderland's Noah Sadiki and Bournemouth's Alex Scott. (Spoiler alert: we got none.)</p>
+
+      <p>We felt we had a larger variety of options amongst the defenders and that's something that has both positives and negatives. We were big fans of Luka Vuskovic, the towering centre-back who moved from Tottenham to Brighton this summer. He shone brightly in the Bundesliga last season and has all the tools to become a world-class defender while also chipping in as a potent set piece threat. The ex-Portuguese league duo of Antonio Silva and Ousmane Diomande were both enticing options, while Chelsea's Marco Palestra and Liverpool's Jeremy Jacquet were also on our list. (Spoiler alert: we got Vuskovic!!!)</p>
+
+      <p>Armed with a 3-tiered list of players we'd love to have on our team, we entered the draft hoping for one of the big names to fall to us at 7. And that's exactly what happened as the preference for creative midfielders at the top meant Erling Haaland fell into our laps. Never have I clicked buttons so fast in my life, man.</p>
+
+      <figure class="article-figure">
+        <img src="img/fantrax-draft-list.png" alt="A four-column table of our draft targets — goalkeepers, defenders, midfielders and forwards — split into three tiers.">
+        <figcaption>Our list (the tiers don't represent how high we'd take them, but how much we liked them)</figcaption>
+      </figure>
+
+      <p>By the time our pick rolled on again, we had to make a decision. With the likes of Bruno, Saka, Rice, Palmer, Wirtz all being picked, we had to choose between reaching for a midfielder or taking the best available player. We went with the latter, picking Haaland's close friend Gabriel Magalhaes.</p>
+
+      <p>I felt we were lucky again as Sandro Tonali was still on the board for our 3rd pick and we quickly drafted the Italian. We then took a punt on Harry Wilson, a big signing for Leeds this season and then continued with another summer signing, Maxence Lacroix.</p>
+
+      <p>Getting into the middle and later rounds is where you find the best value and that causes a lot of problems. Do you focus on getting the right squad combination, risking losing solid contributors or do you keep going with the best player available, risking being unable to play all of them? This question was on our mind as we turned to Hayden Hackney, Cody Gakpo and Harvey Barnes as our next 3 picks.</p>
+
+      <p>There was then a run of defenders, leaving me a little worried whether we could grab one of our targets. By this time, most of our hopefuls among the front line and midfield were already off the board and we didn't wanna risk losing another and so we took Vuskovic. There were a few more ragebait moments as two names on our list - Michael Kayode and Brian Brobbey - were taken with the pick just before ours. I hope the person responsible for this reads this and understands that vociferous action will be taken in response to such criminal activities.</p>
+
+      <p>The later rounds are more of a toss-up but you can find some real value here. Teams generally take a punt on players with long-term injuries but expected return within the season or go for fringe young starters.</p>
+
+      <p>Wrapping up, here's our 16-man squad:</p>
+
+      <p class="squad-list"><strong>GK:</strong> Dean Henderson (Palace)<br>
+      <strong>DEF:</strong> Gabriel M (Arsenal), Lacroix (Chelsea), L Martinez (Man United), Vuskovic (Brighton), Keane (Everton), Alderete (Sunderland)<br>
+      <strong>MID:</strong> Tonali (Spurs), Wilson (Leeds), Hackney (Everton), Barnes (Newcastle), Kamara (Villa), Palacios (Fulham)<br>
+      <strong>FWD:</strong> Haaland (Man City), Gakpo (Liverpool), Thomas-Asante (Coventry)</p>
+
+      <p>So there it is. Our team finished 4th last season and promptly shot themselves in the foot in the playoffs (though I should owe that to our laziness rather than our players) and we're looking forward to another exciting PL season.</p>
+    `,
+  },
+
+  {
     id:          "this-week-in-football-vol-1",
     tag:         "Football",
     title:       "The Week in Football – How serious is the Community Shield? Also, Spurs spend freely and the Premier League manager situation",

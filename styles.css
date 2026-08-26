@@ -392,6 +392,33 @@ body.not-found-active .not-found-view{ display: block; }
   font-weight: 400;
 }
 
+/* Inline images inside an article body, with an optional caption. */
+.article-figure{
+  margin: 34px 0;
+}
+.article-figure img{
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--paper-warm);
+  border: 1px solid var(--rule-soft);
+}
+.article-figure figcaption{
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-3);
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Line-per-position squad lists — left-aligned so short lines don't stretch. */
+.article-body p.squad-list{
+  text-align: left;
+  hyphens: none;
+}
+
 .pullquote{
   font-family: 'DM Serif Display', serif;
   font-style: italic;
