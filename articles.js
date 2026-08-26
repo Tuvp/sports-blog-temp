@@ -20,6 +20,26 @@ const FOOTBALL_SVG = `
 
 const ARTICLES = [
   {
+    id:          "test-article-happy-birthday-vaibhav",
+    tag:         "Test",
+    title:       "TEST ARTICLE : HAPPY BIRTHDAY VAIBHAV",
+    subtitle:    "A test post to check the publishing pipeline end to end. Also, many happy returns to Vaibhav.",
+    author:      "UVP Sports",
+    date:        "26 August 2026",
+    read_time:   "One minute read",
+    image_label: "",
+    image_url:   null,
+    image_svg:   FOOTBALL_SVG,
+    body_html: `
+      <p>This is a test article, published to verify that the publishing pipeline works from end to end. It will be removed shortly.</p>
+      <p>While it is here, though, it may as well do something useful.</p>
+
+      <br>
+      <h2>Happy birthday, Vaibhav</h2>
+      <p>Many happy returns from everyone at <strong>UVP Sports</strong>. Have a great one.</p>
+    `,
+  },
+  {
     id:          "fantrax-fpl-draft-2026-27",
     tag:         "Football",
     title:       "Fantasy Premier League Draft: An Hour of Strategy, Some Surprises and A Lot More Irritations",
