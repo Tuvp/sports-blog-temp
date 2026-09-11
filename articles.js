@@ -20,6 +20,56 @@ const FOOTBALL_SVG = `
 
 const ARTICLES = [
   {
+    id:          "this-week-in-football-vol-4",
+    tag:         "Football",
+    title:       "This Week in Football – the story of the miraculous rise of SV Elversberg, how did they get here? Plus, a contrasting story in the fall of Leicester City and an early Ballon d'Or tier list",
+    subtitle:    "SV Elversberg's three-promotions-in-five-years rise to the Bundesliga, Leicester City's fall to the third tier a decade after their miracle, and an early Ballon d'Or tier list.",
+    author:      "Vishal",
+    date:        "11 September 2026",
+    read_time:   "Eight minute read",
+    image_label: "Vol. 4",
+    image_url:   "cover/twif-sep-11-cover.webp",
+    image_svg:   FOOTBALL_SVG,
+    body_html: `
+      <p>Hello and thanks for picking up Volume 4 of our weekly series, This Week in Football. This week, we'll look at the stories of two clubs trending in opposite directions - the miracle that is German side SV Elversberg and the sadness in the decline of Leicester City. We'll finish this week's edition with a ranking of the Ballon d'Or nominees and throw out some likely winners.</p>
+
+      <br>
+      <h2>SV Elversberg - a stunning rise to the top of German football</h2>
+      <p>The town of Spiesen-Elversberg is situated in Germany's Saarland state, close to the French border. It's a little town, with a population of around 13,000 and the area is well known for its coal deposits and industrialization. In here lies the wonderful story of SV Elversberg, a team that with three promotions in five years have completed a scarcely believable rise up the echelons of German football.</p>
+      <p>Their small size (both reputation wise and actual size wise - their stadium holds only 13,000 people) meant the team could never really spend big money or pay big wages to keep players, thus almost always being treated as a stepping stone. That is not limited to the personnel on the field either. They came close to promotion in 2025 and ended up losing their manager. Earlier this year, Borussia Dortmund snapped up their sporting director.</p>
+      <p>Promotion was secured in the third time of asking in the 2025-26 season, finishing second behind Schalke in Bundesliga 2. Their free-flowing, high-intensity style of football caught eyes but many wondered if it would be sustainable at the highest level of German football, especially with the massive financial discrepancies.</p>
+      <p>They've largely stuck to that style of play, indicated by their transfer policy. It is highlighted by the influx of a large number of young, talented and physically gifted players. Dortmund's Cole Campbell and Bayern's Maurice Krattenmacher arrived for relatively low fees, the pair of 20-year-olds profiling as young attackers who can not only contribute in the near future but also maybe develop well enough to be sold for a huge profit soon that could help the club establish themselves in the top flight.</p>
+      <p>A sold-out Waldstadion an der Kaiserlinde on opening weekend saw the promoted fledglings face a tough fight against Bayer Leverkusen. Many thought this would be where levels would be shown - the 2024 invincible champs boasting the likes of Patrick Schick and Ibrahim Maza amongst their ranks would show what it means to be in the Bundesliga.</p>
+      <p>But no. A stunning 3-2 win for the hosts saw them actually race into a 2-0 lead inside 10 minutes and add another before 2 late goals from the visitors made the scoreline look much different from how the game actually went.</p>
+      <p>One could put that down to a fluke, a lucky break. Promoted teams do have moments like these but are quickly found out. It seemed like that was where this was all heading in their second fixture against Borussia Monchengladbach as Elversberg trailed 3-1 with 25 minutes left to go.</p>
+      <p>But no, once again. Krattenmacher came off the bench and bagged twice including a 92nd minute winner, making it 4-3 and earning another win for the side. 22-year-old French striker David Mokwa has also been impressive, leading the line and finding the back of the net in both games.</p>
+      <p>Their next test might be the most interesting - home to Bayern Munich. Elversberg in their entire history have spent €14 million on transfers. Bayern probably spend more than that every month on player wages. But this is where the beauty of football lies - two sides with completely different monetary situations can come together and hopefully deliver a classic (or Bayern thump them 6-0, who knows). But I'll be rooting for Elversberg.</p>
+
+      <br>
+      <h2>What the hell happened to Leicester City?</h2>
+      <p>This is one edition of the 10-year challenge not many people will be wanting to talk about. 2015-16 was arguably the most interesting Premier League campaign ever, with Leicester beating all odds to complete an unimaginable triumph. For a side that had narrowly avoided relegation the previous year, Claudio Ranieri came in and delivered a moment that will be etched in the memory of football fans all over the world.</p>
+      <p>While not reaching those lofty heights again, having lost the likes of Riyad Mahrez and N'Golo Kante, they maintained themselves in the Premier League, even winning the FA Cup and the Community Shield in 2021. However, it all began to crack in the 2022-23 campaign. A final weekend win over West Ham was not enough as Everton's win meant they finished 18th, 2 points off safety and went to the Championship after nine years, having made the top flight in 2014.</p>
+      <p>They did have a bounce back, immediately winning the Championship and returning to the PL for the 2024-25 season. They were relegated once again, however, and this time it wasn't particularly close, finishing 18th again and missing safety by 13 points.</p>
+      <p>However, this time, optimism was not high. Following their Champions League exploits and the subsequent lack thereof of said exploits, the club's financial situation turned turbulent. Huge losses, the departure of key players and the inability to replace quality meant it was always going to be tough. Their financial problems came to the fore in February, with the FA handing them a six-point deduction that made their situation worse.</p>
+      <p>On-field performances didn't help either. They had a few horrid runs of form, including a run of one win in 18 games and no clean sheet in 30. It all culminated with a 2-2 draw against Hull City in April, confirming that the Foxes would head to the third tier of English football. Their torrid time has continued there, earning just one win in 5, a set of games that included a huge 4-0 loss at home to Oxford United.</p>
+      <p>Can they survive this bad early run and maybe find a way to build themselves back up? One can hope so. There is definitely talent in the squad, with the likes of Stephy Mavididi, Bobby Decordova-Reid, Oliver Skipp and Harry Souttar certainly more than good enough for their current tier. It'll be interesting to see where they go from here.</p>
+
+      <br>
+      <h2>Ballon d'Or tier list - who could win and who will certainly not</h2>
+      <p>France Football released their top 30 list for the Ballon d'Or recently, an annual event that creates a lot of furore and gives a lot of talking points. It hooks players and fans alike and this year it has already given rise to some memorable quotes. Kylian Mbappe has already used the word dictatorship, Lamine Yamal has taken some sly shots and everyone around the world is throwing in their opinions. So without further ado, let us also do the same, organising the best players into tiers (and thus not giving a definitive answer)</p>
+      <p><strong>Tier - Won't win but will be up there</strong></p>
+      <p>This tier represents players who have had decent campaigns but probably not enough to take home the trophy. They might be here because of their reputation or because their teams did quite well on the domestic and international scenes. I'd put the Real Madrid pair of Jude Bellingham and Marc Cucurella here, both who did not have strong domestic campaigns but were impressive in the World Cup. Similarly here would be the likes of Bruno Fernandes, Gabriel Magalhaes, Achraf Hakimi, Lautaro Martinez among others.</p>
+      <p><strong>Tier - Top 5-10, sneaky top 3</strong></p>
+      <p>These players should be finishing in the top 10 and can edge further ahead, but once again aren't probably going to be taking the trophy home. Barcelona's Pau Cubarsi is probably the best example here. The young defender had an excellent 2025-26 but one knows how hard it is for defenders to win the trophy. Similarly for players like Rodri, Michael Olise, Erling Haaland, all who have had moments through the year but maybe just not enough. Might it be blasphemous to put Leo Messi in this tier? Sure, he had an excellent World Cup as always, but Inter Miami last year were not as good as they were in 2024. The Argentine still has the numbers and the massive fan support to back him but it might not be enough this year. Ousmane Dembele could be slightly closer to the top 3 than others but his low league tallies mean he probably also won't complete a back-to-back.</p>
+      <p><strong>Tier - These guys should be winning it</strong></p>
+      <p>At the end of the day, it more or less boils down to three guys - Kylian Mbappe, Harry Kane and Lamine Yamal. The markets have this trio in different orders winning the trophy, with most favouring a first-time win for Bayern's English spearhead. The 33-year-old's numbers are off the charts - around 80 goal contributions for club and country, winning the Bundesliga and the DFB Pokal and lifting England to third place in the World Cup with some key contributions.</p>
+      <p>Yamal had a campaign to remember as well, winning La Liga and the Supercopa de Espana and bagging close to 50 goal contributions. However, he wasn't at his best during the World Cup, scoring just once and that might remain in the minds of the voters, even though Spain eventually went on to lift the trophy.</p>
+      <p>The numbers speak for themselves in Mbappe's case too. Over 50 goals for club and country including 10 goals and 4 assists in the World Cup, going on to become the all-time leading scorer in the tournament's history. There wasn't success on the domestic or international fronts. However, the Ballon d'Or is an individual award and as an individual, Mbappe was certainly among the world's best.</p>
+      <p>So, how will it go? It will be interesting to see what sort of narratives form and what kind of quotes and actions come up between now and late October, where the winner will be decided. Expect a lot of references and fun along the way - few things in football cause this much conversation yet have no effect overall on the game.</p>
+    `,
+  },
+
+  {
     id:          "this-week-in-football-vol-3",
     tag:         "Football",
     title:       "This Week in Football – A title contender preview early in the season? Plus, a real talk on transfers and the top watches in the UCL following the draw",
