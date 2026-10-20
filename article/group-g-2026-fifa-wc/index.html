@@ -166,7 +166,10 @@ function renderFeed(){
 
 /* ── 4. Render: single article ──────────────────────────────────── */
 function renderArticle(a){
-  const heroImg = a.image_url
+  // hide_hero: true — article supplies its own lead photo(s) inside body_html,
+  // so skip the top banner. image_url is still used for the home-feed thumbnail.
+  const showHero = a.image_url && !a.hide_hero;
+  const heroImg = showHero
     ? `<img src="${esc(a.image_url)}" alt="">`
     : `<svg viewBox="0 0 100 56" preserveAspectRatio="xMidYMid meet">${a.image_svg || ""}</svg>`;
 
@@ -184,7 +187,7 @@ function renderArticle(a){
       </div>
     </div>
 
-    <div class="article-hero-img ${a.image_url ? "has-img" : ""}">${heroImg}</div>
+    ${a.hide_hero ? "" : `<div class="article-hero-img ${showHero ? "has-img" : ""}">${heroImg}</div>`}
 
     <article class="article-body">
       ${a.body_html}

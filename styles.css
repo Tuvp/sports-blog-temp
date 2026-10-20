@@ -419,6 +419,32 @@ body.not-found-active .not-found-view{ display: block; }
   hyphens: none;
 }
 
+/* Simple data tables inside an article body (e.g. a stat-by-season breakdown). */
+.article-table{
+  width: 100%;
+  margin: 8px 0 30px;
+  border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+}
+.article-table th,
+.article-table td{
+  padding: 9px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.article-table th{
+  font-weight: 500;
+  color: var(--ink-2);
+  border-bottom: 1.5px solid var(--ink-3);
+}
+.article-table td{
+  color: var(--ink);
+}
+.article-table tbody tr:nth-child(even){
+  background: var(--paper-warm);
+}
+
 .pullquote{
   font-family: 'DM Serif Display', serif;
   font-style: italic;

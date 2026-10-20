@@ -20,6 +20,133 @@ const FOOTBALL_SVG = `
 
 const ARTICLES = [
   {
+    id:          "sixers-2026-27-preview",
+    tag:         "Basketball",
+    title:       "A Last Dance to Save the Never-Ending Process",
+    subtitle:    "LeBron James and Jaylen Brown have landed in South Philly. Do the Sixers finally have what it takes to get past the second round?",
+    author:      "Subash",
+    date:        "20 October 2026",
+    read_time:   "Twenty minute read",
+    image_label: "Sixers Preview",
+    image_url:   "img/sixers-starting-five.webp",
+    hide_hero:   true,
+    image_svg:   FOOTBALL_SVG,
+    body_html: `
+      <figure class="article-figure">
+        <img src="img/sixers-lebron-chalk-toss.webp" alt="LeBron James, back to camera, tossing chalk into the air in a Sixers jersey before a game.">
+        <figcaption>Source: @sixers (X)</figcaption>
+      </figure>
+
+      <p>Well it is time. It is finally time to watch my Sixers play basketball in this new season. Oh boy, I have not been excited for a season like this since probably the 2018-19 season. A fantastic season if not for a few bounces. A season in which we were defeated by the eventual champs because the rims of Toronto which had been tormented by LeBron season after season saved up all their frustration and realizing there was no LeBron in the east that year decided to give that one small nudge needed for the Raptors. So I guess it must be clear to you that I am a Philadelphia 76ers fan. Why did I bring this misery onto myself? When I was starting out to play basketball, there was one particular player by the name Ben Simmons who led a rag-tag bunch of players to a 52-win season which included a notorious hot stretch of 16 straight wins. I, as fate would have it, started following the NBA right in the middle of that hot stretch and fell in love with this team. That unnecessary intro aside, let's get to the purpose of this article, which is to talk about what is probably going to be the most exciting season of basketball Philadelphia has seen in a while.</p>
+
+      <p>LeBron has publicly said that he didn't leave his family to lose in the second round. So let's see whether the Sixers have it in them to finally get past the second round (please get past). And because it is the Sixers I have split it into six categories.</p>
+
+      <br>
+      <h2>There's only one ball for all of them</h2>
+
+      <figure class="article-figure">
+        <img src="img/sixers-starting-five.webp" alt="The Sixers' new-look starting five posing together in their Phila jerseys.">
+        <figcaption>Source: NBA (Facebook)</figcaption>
+      </figure>
+
+      <p>I am tired of reading this online, not only from fans but also from major media outlets. Here's the thing; I acknowledge the fact that there is only one real "Elite playmaker" in the team in LeBron James and it is unfair to ask him to carry the offensive burden every possession. Yes, this would generally be a problem; but this team is not a general team. The other players on this team are not incapable of playmaking, it is just not their strongest suit. All of Jaylen Brown, Tyrese Maxey and Joel Embiid have proven multiple times that they can raise the floor of a team and keep an offense humming just by themselves. Yes, they didn't come into the league as playmakers, but over the years they have been pushed repeatedly by their team's situations to level up their playmaking.</p>
+      <p>Many argue that Embiid is not a high-level playmaker and many are right (mostly). I have said mostly because there is one particular position in the court where Embiid excels at playmaking. The post. He has not always been high-level there; when he came into the league he was bad at it; then he slowly developed his two-man game with Redick where he used to find Redick for threes if he was free and now over the years of playing, has really worked on his post passing and playmaking a lot. His scoring gravity there is only paralleled by the Earth's gravity and this scoring gravity always opens up a few players. Over the last few years he has been really good at finding these open players consistently. Considering the fact that Embiid has gotten better at this every year, I would not be surprised if he gets better this year as well, especially considering the spacing he is going to have with the new teammates.</p>
+      <p>Despite Maxey being the primary ball handler for the Sixers for the past few years, I have never been a huge fan of his half-court passing and playmaking prowess. It is just not his natural strength. Don't get me wrong, I am a huge huge Maxey fan, but it is true that he cannot carry an offense on his own. He is a very studious player of the game and has worked really hard at this from the time he got into the league, but he is limited by his height and honestly his vision is not top-notch. But this doesn't mean he is bad by any means, he can hit the roll man regularly, hit the open man for three, make the first pass to start the play, pass out of the double team and so on. Basically if a play goes as per design he hits the man. But all this being said, he is really good at throwing the lob and when he has the right partner to throw lobs to he can hit them regularly. This is especially highlighted on the break where his own scoring gravity and straight-line speed regularly frees up teammates, after which it is room service. Actually with the space he creates in the fast break and the natural spacing, he has been really good at finding the right pass regularly.</p>
+      <p>Now the foe turned friend. When I am talking with bias (which is most of the time), I have never rated him well as a passer till now. But truth be told, he has been improving every year since joining the league. Just look at the numbers.</p>
+
+      <table class="article-table">
+        <thead><tr><th>Season</th><th>AST</th></tr></thead>
+        <tbody>
+          <tr><td>2016-17</td><td>0.8</td></tr>
+          <tr><td>2017-18</td><td>1.6</td></tr>
+          <tr><td>2018-19</td><td>1.4</td></tr>
+          <tr><td>2019-20</td><td>2.1</td></tr>
+          <tr><td>2020-21</td><td>3.4</td></tr>
+          <tr><td>2021-22</td><td>3.5</td></tr>
+          <tr><td>2022-23</td><td>3.5</td></tr>
+          <tr><td>2023-24</td><td>3.6</td></tr>
+          <tr><td>2024-25</td><td>4.5</td></tr>
+          <tr><td>2025-26</td><td>5.1</td></tr>
+        </tbody>
+      </table>
+
+      <p>He has been improving every year and it is not just being the secondary playmaker, last year with no Jayson Tatum, he carried the Celtics offense as the lone star. From coming into the league as a pure play finisher, he has developed his passing game leaps and bounds. In the half-court he is really good at initiating offense and passing out of double teams. This skill shines brighter during his drive-and-dishes where his scoring opens up shooters and he regularly finds them.</p>
+      <p>I think you can see where I am heading, if not I will help you. One might take a look at these three players and think that they are decent playmakers but it will be messy. Which would be a fair assessment and it might turn out that way as well. But here is how I see it, all of these three are superb cogs in the wheel that fit perfectly well with each other. Tyrese is really good at playmaking while bringing up the ball be it in transition or in half-court offense, Jaylen is really good at playmaking during slashing in the half-court and Joel is really good at playmaking from the post. Yes they would have to let go of some of their natural tendencies and plays have to be designed while keeping this in mind, but I think these three can work really well with each other to bring out the best in all of them.</p>
+      <p>Now that the cogs have been assembled, let's bring the engine to the table. All of the skills that I said these three excel at, LeBron is 10x of each of them. Be it transition, kicking out to the shooter, drive-and-dish, dump off from the post, hitting cutters or touchdown passes he can hit every single pass in the book and place it perfectly as well. Bringing LeBron into this is like adding nitro to a racecar. He is one of the best passers this league has ever seen. I mean, clearly, he is 4th all-time in the assist list and I fully expect him to become top 2 by this year. He has to get 537 more assists to get there and he only dished out 432 last year, but I think his main role this year is going to be to enable these weapons to fire to their maximum power. What we have seen this preseason also confirms this, he has been heavily pass-first in these games, always looking to find the right pass.</p>
+
+      <br>
+      <h2>Can the lights be shot down?</h2>
+
+      <figure class="article-figure">
+        <img src="img/sixers-jomax.webp" alt="Two Sixers players, numbers 0 and 21, walking off the practice court together.">
+        <figcaption>Source: @sixers (X)</figcaption>
+      </figure>
+
+      <p>LeBron can surely get the ball to the shooters around him but can the shooters around him get the ball to the bottom of the net? I really don't know. There's so much talent in the starting five and they have all proven that they can carry the offensive load of a team when needed, but here's the thing about carrying the offensive load, when you are the sole star, it is okay if your efficiency dips and you have a poor shooting percentage but here it is not. All of the said stars need space to operate and space is determined solely by how good a team shoots from the three-point line. And how does the team shoot… Short answer - not great.</p>
+      <p>Long answer - still not great. The best shooter in the team as per last year data is Anfernee Simons and he was 54th in the league (among qualifying players) and he is the one who is going to have to carry the shooting department this season unless the team finds better players before the trade deadline. Kentavious Caldwell-Pope or KCP was really good a few seasons back but has declined since and I don't know if he can pick it back up this season. Labaron Philon Jr had a really good shooting season at Alabama last year but whether it translates to the NBA is a question that needs to be answered. Justin Edwards has also been solid, shooting the ball at 37% last season but none of these options are elite at it. Jaylen and Tyrese have primarily been shooting off the dribble till last season and their shooting percentage should go up when they are shooting it off a pass but it is all just in theory. VJ did not have a good shot in college and honestly surpassed my expectations last season with his shooting. LeBron has had shooting issues all throughout his career. It was his one flaw before, it is his one flaw even now. He has gotten much better over the past few years but is still not someone who can reliably knock it down at a high volume. Joel, while being a great shooter for his size, is not a sniper who can keep shooting it. He has decent gravity and if he sees the man sag off, he will let it fly, but again he cannot be relied upon for heavy usage and neither should he be doing that.</p>
+      <p>In a vacuum, this level of three-point shooting wouldn't necessarily be a problem but the stars that are present in the team all require a level of space which this shooting doesn't provide. Without the necessary space to operate in their zones, the players will be left with double teams, extra help, clogged lanes and the offense might fail to reach its full potential. Having better teammates might reduce the offensive burden off these people and their shooting percentage might go up but it might throw them off their rhythm as well.</p>
+      <p>Clever play-designs and high-level passing can only get the ball to the right places; scoring from there is a skill that needs repeated practice. That's also why I am hopeful about this team, led by Maxey's "1% better every day" mantra and now adding in LeBron to the mix, I think the team is going to practice hard and that leaves me hopeful that they shoot better than I expect them to.</p>
+      <p>Does all this mean their scoring is going to be a problem? Absolutely not, among current teams, the Sixers have the most points scored by the top five scorers by a landslide. The four stars are all players who have shown that they can carry offenses with their scoring in spite of double teams thrown at them whenever they touch the ball and with more stars to share their burden, I expect them to have easier looks and lesser double teams thrown at them. There are good role players but their effectiveness really is just about how they fit with the team and there's time to pass the judgement on that. But honestly, it might not matter whether the team can shoot the lights out when the stars are so bright.</p>
+
+      <br>
+      <h2>Gates locked or wide open?</h2>
+
+      <figure class="article-figure">
+        <img src="img/sixers-embiid-block.webp" alt="Joel Embiid rising to block a shot at the rim against Dallas.">
+        <figcaption>Source: Getty Images</figcaption>
+      </figure>
+
+      <p>They can surely score against pressure but can they pressure against score(r)? Okay, I tried. Anyway getting into the topic, since The Process the Sixers have had quality point-of-attack defenders. The names include Robert Covington, Ben Simmons, Matisse Thybulle, Robert Covington again, Paul George and so on. All of them are huge wings with amazing agility to stick to opposing guards and hold the fort down.</p>
+      <p>This year, that role falls to Jaylen Brown, who is by no means a bad defender but he's also not known for his defense. There is also KCP, but I am assuming Brown is going to have to carry most of the burden. Brown has always been a solid on-ball defender. He certainly has the tools for it, a 7-foot wingspan (at 6'6" height) is a crazy advantage to have as a defender, can close out faster, disrupt passing lanes better and can cover a lot of space. The problems however begin when he goes off the ball. He is often caught ball watching, being in no man's land and letting backdoor cuts go. To put it shortly, he is often caught zoned out while in zone (pun intended). So in my opinion, the best position for him is to be on ball. This way he would be locked in and also disrupt opposition offenses. Being a good defender is mainly about your motor on the defensive end and he often tries to cruise in lower gears instead of staying in top gear.</p>
+      <p>Speaking of top gear, the other wings that complement JB certainly don't lack here. All of Tyrese, KCP and VJ have an amazing motor. They are constantly moving, running around and just injecting energy to this defensive side. If they lack in skill, they certainly make up for it with their sheer activity. This however doesn't solve all their problems. Tyrese has a few fundamental issues affecting his defense. Namely, his size and strength. He is constantly being hunted down for mismatches and pushed around. Of course, because it is Tyrese, he has constantly been getting better at this but at NBA level, this is definitely an issue. KCP has proven many many times that he is an amazing defender. He is the defensive leader on the perimeter. He just needs to not be a liability on offense and I think he will be an integral part of this team solely for his defense. VJ I feel on the other hand has all the tools needed to be a great defender but it's just been one season and this is just his first summer, so it's too early to judge him. His defense just feels raw and unpolished, it can only get better with more and more reps and this season I am expecting him to take a leap but only time will tell.</p>
+      <p>Next, the man who has beat time himself. Taking a step into his 24th (!!!) season, it is no secret to anyone that his step is slower and his jump is lower. Everyone knows it and he knows others know it as well. LeBron is an incredibly smart basketball player and was an outstanding defender (should have been the DPOY back in 2013 but that is a different discussion altogether). He knows what it takes to be a great defender and how energy-intensive it is and he knows that he has limited energy. So over the past few years he has been taking a break during defense while being the leader of the pack and guiding other players. I think he is going to be playing the same role this year as well and honestly it is unfair to expect more from him. It is practically elder abuse if he has to work hard on both ends at 41. If you feel that I am a LeBron glazer, don't worry you are absolutely right. In my opinion he is the smartest basketball player alive and the most athletic human being in this world. 24 years of long seasons should prove it to you. If he feels that he must take a break during defense for the best results, then he must.</p>
+      <p>The best results on the defensive end are anchored by one player and that is the center. It is by far the most important position for a defense and determines the quality of the whole defense. Joel Embiid is a darn good defender, he has all the potential to be the DPOY (yes I said has and not had). He has elite length, strength and timing and is easily a top-3 defender in the league when he is completely locked in. But is he completely locked in? I don't think he has been over the past many years. There have been flashes of his full potential, but never for long stretches. Injuries play a huge role in this, Embiid has constantly been under some load management whenever he plays throughout the past couple of seasons and never been able to go full throttle. But with his new look and a lot less weight to carry (both in his body and also team scoring) I think this is the year he could lock in on defense to truly reach his maximum potential. He is currently the best defender in this team and the team also certainly needs it. The DPOY trophy would look great in your cabinet, Joel.</p>
+      <p>So coming back to the question, I think a very solid and strong structure is present for the gate, but only time can tell whether the gate is locked down or is wide open.</p>
+
+      <br>
+      <h2>End to End coverage</h2>
+
+      <figure class="article-figure">
+        <img src="img/sixers-lebron-oop.webp" alt="LeBron James rising for an alley-oop dunk in transition against Boston.">
+        <figcaption>Source: @sixers (X)</figcaption>
+      </figure>
+
+      <p>While I did say Joel has all the potential to be DPOY, he definitely has to work on his rebounding. It has been bad for a long time now and is pulling the team down as well. The Sixers have been among the weaker rebounding teams, which is honestly unacceptable for the amount of size and length they have had. They have simply been outhustled and outworked and that is something that has to change. These issues might stem from the fact that the Sixers never had a veteran leader to hold people accountable, something that has changed this year, so it is not hopeless but it is something that should be addressed. The players certainly have the necessary size and length for this, I have always felt it to be an easily solvable issue if someone just took up the responsibility for it (looking at you, LeBron).</p>
+      <p>This lack of good rebounding has a chain effect where the players on the perimeter who could be looking for quick outlet passes and fast breaks cannot do it because the possession might go back to the other team. Securing the defensive boards and cleaning up the glass not only ends the opposition possession but also gives a chance for the amazing transition offense to thrive. This year especially with LeBron, Tyrese, VJ and Jaylen, transition has to be a major part of the scoring. If not, the team is missing out on some easy points. But this transition offense is one of the most if not the most lethal transition offense in the league. These are players who are elite at throwing and receiving lobs, who can also shoot threes and also score in isolation. Get stuck on a mismatch and you are done for, get caught one step behind and they dunk on you, place one step wrong and it's a layup for someone else and if you do all of this right, you get Joel trailing for a wide-open three.</p>
+      <p>LeBron is by far the best transition scorer of this generation and commands such gravity that anyone who runs with him is free by default. He also has the passing vision and skill to hit the right pass if he can't score. They have two blurs in Tyrese and VJ running the floor and on top of this they have Jaylen who can score from anywhere if given a gap. This transition offense if it clicks not only creates immediate scoring opportunities but defenses will also get caught in a lot of mismatch situations as they start fearing it. These mismatch situations give better scoring opportunities to the elite isolation scorers present. Not only that, mismatches also give the team better odds at securing an offensive rebound. Yes, it starts with one end and ends at the other and the key for all of this is some hustle and some heart.</p>
+
+      <br>
+      <h2>The most important ability</h2>
+
+      <figure class="article-figure">
+        <img src="img/sixers-jb-dunk.webp" alt="Jaylen Brown dunking over defenders against Brooklyn.">
+        <figcaption>Source: @sixers (X)</figcaption>
+      </figure>
+
+      <p>I hear you screaming "Where is the most important question of it all?" and yes I will address the elephant in the room. All of the negatives and positives I mentioned hinge mainly on two players - LeBron and Joel. Both of them currently are not expected by anyone to play the full season. The backup bigs department is not the strongest currently.</p>
+      <p>With Ariel Hukporti out for the season due to an injury, the department that was supposed to be a backup for injuries is currently dealing with injuries. Adem Bona, Jabari Walker, Dean Wade, Dominick Barlow and Tacko Fall are the other members present here. All of them are solid players who can fill their roles and complement the guards.</p>
+      <p>What matters is the postseason and the team even without LeBron and Embiid has enough quality to reach the playoffs as a top seed. With a conservative load-management style of playing that has become a regular thing for all 76ers star players I think both of them can reach the postseason healthy and ready to go.</p>
+      <p>However, injuries can never be predicted and they can indeed derail seasons (trust me, I know). Jaylen Brown proved last year that even with no other stars present in the team, he can carry a team to a top seed in the east and Maxey has had a lot of practice playing as the sole star. With both of them healthy, I don't have too many doubts about reaching the playoffs. I just hope and wish for the whole team to be healthy for the postseason. With this I will end this section as I really don't want to jinx anything.</p>
+
+      <br>
+      <h2>Vibe check</h2>
+
+      <figure class="article-figure">
+        <img src="img/sixers-vibe-check.webp" alt="Two Sixers players, numbers 9 and 77, laughing together during practice.">
+        <figcaption>Source: @sixers (X)</figcaption>
+      </figure>
+
+      <p>A happy team is a winning team. I have read way too many people say that this team has too many mouths to feed and when the mouths are not fed, there will be squabbles and fights. To all of them, I have a simple question, have you all ever seen Tyrese and VJ talk and interact with people? Do you all seriously think that a team with both of them, not just one but both of them will have chemistry issues? If there is indeed a situation where someone has to sacrifice, it is going to be VJ and Tyrese giving up their load and moving to a more off-ball role and if you want me to be worried about both of them causing locker room issues, you are crazy. If any of the other three have to sacrifice their load on the offense for the team, I think they will love it rather than hate it considering how much they have carried their teams for so many seasons. I personally feel the vibes are going to be amazing this season just like how past few seasons have been.</p>
+      <p>If the question is more about who becomes the leader with so many superstars on the same team, again I feel this is baseless. There is only one right answer and that is LeBron. It has been an issue till now with no one taking up the responsibility, but I think LeBron coming in changes it a lot. Certainly having a player who has won 4 championships, 4 FMVPs, 4 MVPs and so many more awards who is also considered a top-2 player all-time by everyone clears any questions about who is the leader of the team. He has been there and done that and was ruling the east for long enough to guide everyone how to win in the east. I think the team will also fall right behind him and follow him as he leads.</p>
+
+      <br>
+      <h2>So, what's the verdict?</h2>
+      <p>The verdict is that this season is going to be a great one, so fasten your seatbelts and hold tight cuz this one is going to be a fun ride. The team has all the pieces ready and organized. It just needs to be arranged and the puzzle will be solved. I am hoping for a 60+ win season and a championship obviously.</p>
+      <p>Back in the summer of 2013, Sam Hinkie saw the Heatles win back-to-back before which LeBron had said they would win not 4, not 5, not 6, not 7 and decided it made more sense to target the time after the superteam in Miami disbanded instead of trying to turn the team around immediately and fight against them. He had a long-term vision and was open about it. He got the fans supporting a losing team in the hopes of the future. He started 'The Process' and we have been trusting the process ever since. Now LeBron himself has come here. Can he finish the process? Only time will tell, but I really hope he does because the Sixers faithful deserve a poetic ending to this story.</p>
+    `,
+  },
+
+  {
     id:          "this-week-in-football-vol-6",
     tag:         "Football",
     title:       "This Week in Football – the landmark Manchester City verdict arrives, what happens from here? Plus, a look at three interesting butterfly effect fall-offs from City's shenanigans and how they changed football",
